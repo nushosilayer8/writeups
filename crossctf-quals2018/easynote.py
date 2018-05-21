@@ -1,8 +1,16 @@
 from pwn import *
 context.log_level='debug'
 
-# read and edit have a vulnerability:
+# read and edit in the binary have a vulnerability:
 # they can take in negative indexes
+
+# edit also doesnt malloc() if the entry is non-null
+# Thus, we can modify the contents of the note after #i
+# using edit(#i, -1, 'stuff')
+
+# and also read the contents of a note (including the address
+# of the next note) using read(#i, -1)
+
 
 # The structure of the note is as follows:
 # +----------+----------+----------+----------+ ...
