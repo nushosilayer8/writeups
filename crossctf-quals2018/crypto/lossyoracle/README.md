@@ -1,7 +1,9 @@
 # LossyORacle - CrossCTF Quals 2018 (crypto)
 
 > No one believes I can recover the message from this crappy ORacle.
+>
 > nc ctf.pwn.sg 1401
+>
 > Creator - prokarius (@prokarius)
 
 
