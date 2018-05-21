@@ -6,7 +6,7 @@
 
 
 ## Challenge
-We are given a service that runs the python script [lossyoracle.py](). We can connect to the service using `nc` and it will spit out the encrypted flag.
+We are given a service that runs the python script [lossyoracle.py](https://raw.githubusercontent.com/nush-osi-layer-8/writeups/master/crossctf-quals2018/crypto/lossyoracle/lossyoracle.py). We can connect to the service using `nc` and it will spit out the encrypted flag.
 
 The script reads the flag file, then encrypts it with a key using the following function.
 
