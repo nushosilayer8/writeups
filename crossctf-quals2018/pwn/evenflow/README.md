@@ -51,7 +51,7 @@ According to documentation, `strcmp` will return a number that says how far the 
 
 ## Exploit
 ### $?
-`$?` contains the return value of the previous command. Since we are allowed to pass a string of 2 bytes to `echo`, we can just send in `$?` for "shell".
+In a shell, `$?` contains the return value of the previous command. Since we are allowed to pass a string of 2 bytes to `echo`, we can just send in `$?` for "shell".
 
 So, we can call `echo $?` which will give us the return value of `./evenflow flag`, which will let us know how far away is the first differing character from the actual flag. 
 
