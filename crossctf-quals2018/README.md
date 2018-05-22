@@ -7,6 +7,7 @@
 [exploit](https://github.com/nush-osi-layer-8/writeups/raw/master/crossctf-quals2018/pwn/easynote/easynote.py)
 
 ### Even Flow
+[writeup](https://github.com/nush-osi-layer-8/writeups/tree/master/crossctf-quals2018/pwn/evenflow)
 [binary](https://github.com/nush-osi-layer-8/writeups/raw/master/crossctf-quals2018/pwn/evenflow/evenflow.py)
 [exploit](https://github.com/nush-osi-layer-8/writeups/raw/master/crossctf-quals2018/pwn/evenflow/solve.py)
 
