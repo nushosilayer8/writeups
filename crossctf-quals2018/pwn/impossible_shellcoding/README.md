@@ -72,10 +72,9 @@ One important thing to take note is, since 32-bit code can only read the lower 3
 
 ## Exploit
 The exploit consists of two parts, firstly, 64-bit shellcode that does the following:
-1) `mmap` with low addresses with RWX (read-write-exec) permissions
-2) Read in 32-bit shellcode that opens the file and reads it
-	a) uses the `mmap`ed memory because the orginal binary only reads in 256 bytes - not enough!
-3) `retf` to the mmap'ed memory to run the 32-bit shellcode
+1. `mmap` with low addresses with RWX (read-write-exec) permissions
+2. Read in 32-bit shellcode that opens the file and reads it into the `mmap`ed memory because the orginal binary only reads in 256 bytes - not enough!
+3. `retf` to the mmap'ed memory to run the 32-bit shellcode
 
 ```
 mmap = '''
