@@ -1,4 +1,4 @@
-# Even Flow - CrossCTF Quals 2018 (crypto)
+# Even Flow - CrossCTF Quals 2018 (pwn)
 
 > Do you like shell command injection?
 >
