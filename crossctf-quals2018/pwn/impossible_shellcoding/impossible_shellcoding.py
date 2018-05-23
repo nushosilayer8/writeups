@@ -8,7 +8,7 @@ context.arch = 'amd64'
 # 1. Stop Execve and suid
 #       prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0)
 #   prctl() is a mechanism to limit what a process can do.
-#   The first prctl was meant to stop you from running execve()
+#   The first prctl was meant to stop you from running execve() as other users
 #   and changing the suid bits.
 
 # 2. Setup SECCOMP rules
