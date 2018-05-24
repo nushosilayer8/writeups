@@ -8,11 +8,17 @@
 We are given the hints in this format:
 
 >01 01 02, Score: 04
+>
 >You contribute to the puddle of urine in the corner of this room.
+>
 >Scribbled into the wall is the number 17.
+>
 >Below in red, the number 0 was written.
+>
 >Where would you like to move?
+>
 >6 -- Down
+>
 >9 -- Quit
 
 1-6 are used to navigate the location to collect all the hints.
@@ -24,8 +30,7 @@ And we are also given 4 hints to solve the challenge:
 >
 >So now that you can match why each object is in a specific room (with a certain coordinate and score), perhaps think about the scribblings. What's the meaning behind the scribbles?
 >
->You are looking for a string of characters that leads to the final flag.
->Link each object in the rooms to the coordinates and figure out the overarching theme of the puzzle.
+>You are looking for a string of characters that leads to the final flag. Link each object in the rooms to the coordinates and figure out the overarching theme of the puzzle.
 
 And the words reduced, reaction and solution are italicized, suggesting the topic is chemistry.
 
