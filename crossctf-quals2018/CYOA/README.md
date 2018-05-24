@@ -1,7 +1,9 @@
 # Choose Your Own Adventure - CrossCTF Quals 2018 (misc)
 
 > Maybe your question was too long. You *reduced* the length of your question and asked the oracle again: "Where's the flag?"
+>
 > As expected, she had no *reaction* again. You sigh... maybe the *solution* really was in there after all. You close your eyes and started willing yourself back into the enemy's base...
+>
 > Non-standard flag format: <code>[A-Z0-9]+</code>
 
 ## Challenge
