@@ -23,7 +23,7 @@ We are given the hints in this format:
 >
 >9 -- Quit
 
-1-6 are used to navigate the location to collect all the hints.
+1-6 are used to navigate the location to collect all the [hints](./CYOA%20challange.txt).
 
 And we are also given 4 hints to solve the challenge:
 >Hint 1 for CYOA: len(flag) = 9 Think outside the box for this challenge. It's less of a ctf challenge and more of a misc puzzle tbh...
@@ -38,7 +38,7 @@ And the words reduced, reaction and solution are italicized, suggesting the topi
 
 ## Interpreting the hints
 
-Consider the hint above, urea is one component of urine, with chemical formula CO(NH2)2 -> C1O2N2H4, which corresponds to the coordinates(01 01 02) and the score(04). With this in mind we check all the other 19 hints and get all the chemical formula.
+Consider the hint above, urea is one component of urine, with chemical formula CO(NH2)2 -> C1O2N2H4, which corresponds to the coordinates(01 01 02) and the score(04). With this in mind we check all the other 19 hints and get all the [chemicals](./CYOA%20chemicals.txt).
 
 The scribbles in the wall are also unique, ranging from 0 to 19, which suggests the chemicals can be sorted.
 
