@@ -33,10 +33,8 @@
 Manual Labour
 
 ## Misc
-
-:(
-
-This challenge sahks
+### CYOA
+[writeup](CYOA/)
 
 ## Crypto
 ### Lossy ORacle
@@ -44,6 +42,15 @@ This challenge sahks
 [script](https://github.com/nush-osi-layer-8/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/lossyoracle.py)
 [exploit](https://github.com/nush-osi-layer-8/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/solve.py)
 [flag](https://github.com/nush-osi-layer-8/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/flag)
+
+### BabyRSA
+[writeup](crypto/BabyRSA/)
+[exploit](crypto/BabyRSA/BabyRSA.py)
+
+### BabyRSA2
+[writeup](crypto/BabyRSA2/)
+[exploit](crypto/BabyRSA2/BabyRSA2.py)
+
 
 ## Web
 
