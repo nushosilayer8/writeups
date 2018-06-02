@@ -15,7 +15,7 @@ We notice that all the exponents are the same.
 1. Firstly, 2 distinct primes are chosen, p and q
 2. Calculate the modulus with n=pq
 3. Calculate λ(n)=lcm(p-1,q-1)
-4. Choose the exponent e such that `1<e<\lambda(n)` and e and n are coprime
+4. Choose the exponent e such that 1<e<λ(n) and e and n are coprime
 5. Calculate d=e-1 (mod λ(n))
 6. Calculate the ciphertext c with c=m<sup>e</sup> (mod n)
 Decryption is done with m=c<sup>d</sup> (mod n)
@@ -26,7 +26,7 @@ If the random prime generator is flawed, it could produce 2 prime numbers that a
 ### Low exponent attack
 Another option is if c=m<sup>e</sup>, we can just calculate m=c<sup>1/e</sup> and we're done. This would require the exponent to be much smaller compared to the modulus. 
 
-Since we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m<sup>e</sup> (mod `n1*n2*n3...`), then we can take the 257th root. **This assumes message remains the same**
+Since we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m<sup>e</sup> (mod n1\*n2\*n3...), then we can take the 257th root. **This assumes message remains the same**
 
 ### Chinese remainder theorem
 Let N be the product of all the modulus
