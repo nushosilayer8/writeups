@@ -4,14 +4,14 @@
 >
 >[out.txt](./out.txt).
 
-##Challenge
+## Challenge
 We're give a list of RSA n(modulus),e(exponent),c(ciphertext)
 
 We notice that all the exponents are the same.
 
-##Vulnerability
+## Vulnerability
 
-###RSA Algorithm
+### RSA Algorithm
 1. Firstly, 2 distinct primes are chosen, p and q
 2. Calculate the modulus with n=pq
 3. Calculate λ(n)=lcm(p-1,q-1)
@@ -20,15 +20,15 @@ We notice that all the exponents are the same.
 6. Calculate the ciphertext c with c=m<sup>e</sup> (mod n)
 Decryption is done with m=c<sup>d</sup> (mod n)
 
-###Common prime factor attack
+### Common prime factor attack
 If the random prime generator is flawed, it could produce 2 prime numbers that are the same, and the message can easily be found by calculating p and q, however, every single pair of primes is coprime.
 
-###Low exponent attack
+### Low exponent attack
 Another option is if c=m<sup>e</sup>, we can just calculate m=c<sup>1/e</sup> and we're done. This would require the exponent to be much smaller compared to the modulus. 
 
 Since we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m<sup>e</sup> (mod `n1*n2*n3...`), then we can take the 257th root. **This assumes message remains the same**
 
-###Chinese remainder theorem
+### Chinese remainder theorem
 Let N be the product of all the modulus
 
 Let N<sub>i</sub>=N/n<sub>i</sub>
