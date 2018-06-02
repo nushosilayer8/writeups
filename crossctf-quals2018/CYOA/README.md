@@ -23,7 +23,7 @@ We are given the hints in this format:
 >
 >9 -- Quit
 
-1-6 are used to navigate the location to collect all the [hints](./CYOA%20challange.txt).
+1-6 are used to navigate the location to collect all the [hints](./CYOA%20challenge.txt).
 
 And we are also given 4 hints to solve the challenge:
 >Hint 1 for CYOA: len(flag) = 9 Think outside the box for this challenge. It's less of a ctf challenge and more of a misc puzzle tbh...
