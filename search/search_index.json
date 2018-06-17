@@ -1,6 +1,16 @@
 {
     "docs": [
         {
+            "location": "/", 
+            "text": "OSI Layer 8\n\n\nCTF Team from NUS High School\n\n\nThis website contains a collection of writeups for challenges our team solved.", 
+            "title": "OSI Layer 8"
+        }, 
+        {
+            "location": "/#osi-layer-8", 
+            "text": "CTF Team from NUS High School  This website contains a collection of writeups for challenges our team solved.", 
+            "title": "OSI Layer 8"
+        }, 
+        {
             "location": "/crossctf-quals2018/README/", 
             "text": "CrossCTF Quals 2018\n\n\nPwn\n\n\nEasynote\n\n\nbinary\n\n\nexploit\n\n\nEven Flow\n\n\nwriteup\n\n\nbinary\n\n\nexploit\n\n\nImpossible Shellcoding\n\n\nbinary\n\n\nexploit\n\n\nQuiet Moon\n\n\nbinary\n\n\nexploit\n\n\nReal Baby Pwnable\n\n\nbinary\n\n\nexploit\n\n\nSkipping Rope\n\n\nbinary\n\n\nexploit\n\n\nReverse Engineering\n\n\nGoGoGo\n\n\nManual Labour\n\n\nMisc\n\n\nCYOA\n\n\nwriteup\n\n\nCrypto\n\n\nLossy ORacle\n\n\nwriteup\n\n\nscript\n\n\nexploit\n\n\nflag\n\n\nBabyRSA\n\n\nwriteup\n\n\nexploit\n\n\nBabyRSA2\n\n\nwriteup\n\n\nexploit\n\n\nWeb\n\n\nQuirkyScript 1\n\n\nQuirkyScript 2\n\n\nQuirkyScript 3\n\n\nQuirkyScript 4\n\n\nQuirkyScript 5\n\n\nBaby Web", 
             "title": "CrossCTF Quals 2018"
