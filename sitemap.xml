@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/CYOA/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/CYOA/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/crypto/BabyRSA/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/crypto/BabyRSA/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/crypto/BabyRSA2/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/crypto/BabyRSA2/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/crypto/lossyoracle/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/crypto/lossyoracle/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/pwn/evenflow/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/pwn/evenflow/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/crossctf-quals2018/pwn/impossible_shellcoding/README/</loc>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/pwn/impossible_shellcoding/README/</loc>
      <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
