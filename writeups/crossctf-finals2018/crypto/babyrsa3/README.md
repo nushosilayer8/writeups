@@ -1,4 +1,4 @@
-# BabyRSA3 - CrossCTF Finals 2018 (crypto)
+# CrossCTF Finals 2018 : BabyRSA3 (crypto)
 
 > So I heard that you can flip the private and public information for RSA...
 > 

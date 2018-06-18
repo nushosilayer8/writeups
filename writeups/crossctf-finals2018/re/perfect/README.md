@@ -1,4 +1,4 @@
-# Perfect - CrossCTF Finals 2018 (re)
+# CrossCTF Finals 2018 : Perfect (re)
 
 > 'Cause we lost it all Nothin' lasts forever
 > 
