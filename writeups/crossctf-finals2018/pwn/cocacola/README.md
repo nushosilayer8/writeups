@@ -1,6 +1,12 @@
 # CrossCTF Finals 2018 : Coca Cola (Pwn)
 ### First Blood by : TinyBoxer
 
+>Catch the Wave. Coke!
+>
+>nc ctf.pwn.sg 4001
+>
+>Creator - amon (@nn_amon)
+
 ## Static Analysis
 Running ```file cocacola``` gives:
 ```
@@ -113,8 +119,8 @@ unsigned __int64 cola()
 
 In this method, we get a random number then do some math to get produce another value, then save it into ```v3```. If ```something``` is true, we initalize variables ```v2```, ```v4``` and ```v11```. Note that ```v11``` has a pointer to some string, not the string itself. Next, we print out some info, then check if the ```flag``` variable is ```0x44``` and if ```v11``` isn't ```NULL```, and print ```v11``` out in a ```print("Error: %s\n")```.
 
-## The Solution
-We see that if ```something``` is ```0``` (also called ```NULL```), when we print out info in ```cola()```, it prints out values that are uninitialized. Usually, these are values from the previous function call that is made at the same 'level' as the current function (e.g main->coca is on the same 'level' as main->cola but main->cola is not on the same 'level' as main->cola->puts). That function is ```coca()```, based on main()'s code. If we look at the ```read(0, &buf, 0xff)```, we see that it reads 0xff bytes into buf, which is at rbp-0x110. All the variables in ```cola()``` are from rbp-0x60 onwards, so we can see that we can control all the variables in ```cola``` except ```v0```, ```v3``` and ```v12```. Note that ```cola()``` prints out v11 in ```printf("Error: %s\n", v11)```, interpreting it as a string, as long as ```flag``` is ```0x44```. Thus, we can print out arbitrary memory since we can control v11! We can even print out the contents of ```flag_page``` by setting v11 to ```0x700B1000```
+## Solution
+We see that if ```something``` is ```0```, when we print out info in ```cola()```, it prints out values that are uninitialized. Usually, these are values from the previous function call that is made at the same 'level' as the current function (e.g main->coca is on the same 'level' as main->cola but main->cola is not on the same 'level' as main->cola->puts). That function is ```coca()```, based on main()'s code. If we look at the ```read(0, &buf, 0xff)```, we see that it reads 0xff bytes into buf, which is at rbp-0x110. All the variables in ```cola()``` are from rbp-0x60 onwards, so we can see that we can control all the variables in ```cola``` except ```v0```, ```v3``` and ```v12```. Note that ```cola()``` prints out v11 in ```printf("Error: %s\n", v11)```, interpreting it as a string, as long as ```flag``` is ```0x44```. Thus, we can print out arbitrary memory since we can control v11! We can even print out the contents of ```flag_page``` by setting v11 to ```0x700B1000```
 
 So far, we need to set ```flag``` to ```0x44```, ```something``` to 0, and we also need to set ```v11``` to ```0x700B10000``` (this can be done in ```coca()```'s ```read(0, &buf, 0xff)```)
 

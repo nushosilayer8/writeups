@@ -1,5 +1,12 @@
 # CrossCTF Finals 2018 : FTLOG (Pwn)
 ### First Blood by : OSI Layer 8
+>https://youtu.be/RW2vXFLXtps
+>
+>nc ctf.pwn.sg 4004
+>
+>Hint: The raspberry Pis might come in handy but you can look at using qemu too.
+>
+>Creator - amon (@nn_amon)
 
 ## Static Analysis
 Running ```file ftlog``` gives:
@@ -34,3 +41,5 @@ In other words, this is a simple shellcode challenge, but for ARM.
 The solution is to simply send in some ARM shellcode to spawn shell, then interact with it.
 
 Solution code in [here](ftlog.py)
+
+P.S. I still have no idea what the YouTube link is for

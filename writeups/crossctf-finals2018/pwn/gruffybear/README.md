@@ -1,6 +1,12 @@
 # CrossCTF Finals 2018 : GruffyBear (Pwn)
 ### First Blood by : N0X10U5 G4S3S
 
+>There's something fishy about this Build-A-Bear workshop...
+>
+>nc ctf.pwn.sg 4002
+>
+>Creator - amon (@nn_amon)
+
 ## Static Analysis
 Running ```file gruffybear``` gives:
 ```
@@ -259,7 +265,7 @@ int destruction()
 If ```admin_enabled``` is true and ```selected_bear``` is valid,
 we can execute ```selected_bear```'s ```self_destruct_device_ptr```
 
-## The Solution
+## Solution
 As mentioned earlier, this is a typical UAF challenge. The obvious steps so far are:
 1. Build Bear 
     1. Put arbitrary data
