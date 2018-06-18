@@ -5,6 +5,8 @@
 > nc ctf.pwn.sg 16667
 >
 > Creator - waituck (@wongwaituck)
+>
+> [towerofbeer](./towerofbeer)
 
 ## Analysis
 Like [rochefort6](../rochefort6), it asks for a number, we choose 8, then it presents us with the challenge.
