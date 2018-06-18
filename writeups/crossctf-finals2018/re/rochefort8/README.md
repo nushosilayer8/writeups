@@ -269,7 +269,7 @@ project = angr.Project(binary_name)
 initial_state = project.factory.blank_state(addr=0x401209)
 ```
 
-Also, I have to "define" `scanf` myself because angr does not work well with format string related stuff. Inside my own `scanf`, I created 10 symbolic values to represent our input, and store them in memory.
+Also, I have to "define" `scanf` myself because angr does not work well with format string related stuff. Inside my own `scanf`, I created 10 symbolic values to represent our input, and store them in memory. In the end, set return value to be 10, because the program checks for it.
 
 That being said, I also have to "skip" the instruction at 0x40126f which calls `printf`. 
 (If you reversed the binary, you may feel that something's wrong, because the output of `printf` is important. Yes, I made a mistake, which I'll mention later.)
