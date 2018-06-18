@@ -2,47 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-finals2018/crypto/babyrsa3/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-finals2018/pwn/cocacola/writeup/</loc>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-finals2018/pwn/ftlog/writeup/</loc>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-finals2018/re/perfect/</loc>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/CYOA/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/crypto/BabyRSA/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/crypto/BabyRSA2/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/crypto/lossyoracle/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/pwn/evenflow/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nush-osi-layer-8.github.io/writeups/crossctf-quals2018/pwn/impossible_shellcoding/</loc>
-     <lastmod>2018-06-17</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
