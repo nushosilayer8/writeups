@@ -13,7 +13,7 @@
         <meta name="description" content="Our CTF writeups">
       
       
-        <link rel="canonical" href="https://osilayer8.cf/crossctf-quals2018/crypto/BabyRSA2/">
+        <link rel="canonical" href="https://osilayer8.cf/crossctf-finals2018/crypto/babyrsa3/README/">
       
       
         <meta name="author" content="OSI Layer 8">
@@ -37,27 +37,27 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.9.0">
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
     
     
       
-        <title>BabyRSA2 - CrossCTF Quals 2018 (crypto) - OSI Layer 8</title>
+        <title>CrossCTF Finals 2018 : BabyRSA3 (crypto) - OSI Layer 8</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.ba0fd1a6.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.6079476c.css">
       
       
         
         
-        <meta name="theme-color" content="">
+        <meta name="theme-color" content="#03a9f4">
       
     
     
-      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
     
     
   </head>
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#babyrsa2-crossctf-quals-2018-crypto" tabindex="1" class="md-skip">
+      <a href="#crossctf-finals-2018-babyrsa3-crypto" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://osilayer8.cf/" title="OSI Layer 8" class="md-header-nav__button md-logo">
           
-            <img src="../../../img/logo_white.svg" width="24" height="24">
+            <img src="../../../../img/logo_white.svg" width="24" height="24">
           
         </a>
       </div>
@@ -130,7 +130,7 @@
                 OSI Layer 8
               </span>
               <span class="md-header-nav__topic">
-                BabyRSA2 - CrossCTF Quals 2018 (crypto)
+                CrossCTF Finals 2018 : BabyRSA3 (crypto)
               </span>
             
           
@@ -211,7 +211,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <span class="md-nav__button md-logo">
       
-        <img src="../../../img/logo_white.svg" width="48" height="48">
+        <img src="../../../../img/logo_white.svg" width="48" height="48">
       
     </span>
     OSI Layer 8
@@ -247,8 +247,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Index" class="md-nav__link">
-      Index
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -257,10 +257,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Crossctf finals2018
@@ -276,10 +278,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       Crypto
@@ -295,10 +299,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1" checked>
     
     <label class="md-nav__link" for="nav-2-1-1">
       Babyrsa3
@@ -314,11 +320,76 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/crypto/babyrsa3/" title="CrossCTF Finals 2018 : BabyRSA3 (crypto)" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        CrossCTF Finals 2018 : BabyRSA3 (crypto)
+      </label>
+    
+    <a href="./" title="CrossCTF Finals 2018 : BabyRSA3 (crypto)" class="md-nav__link md-nav__link--active">
       CrossCTF Finals 2018 : BabyRSA3 (crypto)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" title="Challenge" class="md-nav__link">
+    Challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" title="Solution" class="md-nav__link">
+    Solution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factorization" title="Factorization" class="md-nav__link">
+    Factorization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-n" title="Find n" class="md-nav__link">
+    Find n
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -352,8 +423,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/crypto/fitblips/" title="CrossCTF Finals 2018 : fitblips (crypto)" class="md-nav__link">
-      CrossCTF Finals 2018 : fitblips (crypto)
+    <a href="../../fitblips/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -412,8 +483,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/misc/evil/" title="CrossCTF Finals 2018 : The Evilness (Misc)" class="md-nav__link">
-      CrossCTF Finals 2018 : The Evilness (Misc)
+    <a href="../../../misc/evil/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -472,8 +543,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/mobile/human/" title="CrossCTF Finals 2018 : Human Powered Flag Generator" class="md-nav__link">
-      CrossCTF Finals 2018 : Human Powered Flag Generator
+    <a href="../../../mobile/human/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -532,8 +603,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/pwn/cocacola/" title="CrossCTF Finals 2018 : Coca Cola (Pwn)" class="md-nav__link">
-      CrossCTF Finals 2018 : Coca Cola (Pwn)
+    <a href="../../../pwn/cocacola/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -568,8 +639,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/pwn/ftlog/" title="CrossCTF Finals 2018 : FTLOG (Pwn)" class="md-nav__link">
-      CrossCTF Finals 2018 : FTLOG (Pwn)
+    <a href="../../../pwn/ftlog/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -604,8 +675,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/pwn/gruffybear/" title="CrossCTF Finals 2018 : GruffyBear (Pwn)" class="md-nav__link">
-      CrossCTF Finals 2018 : GruffyBear (Pwn)
+    <a href="../../../pwn/gruffybear/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -640,8 +711,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/pwn/slowmo/" title="CrossCTF Finals 2018 : Slowmo (Pwn)" class="md-nav__link">
-      CrossCTF Finals 2018 : Slowmo (Pwn)
+    <a href="../../../pwn/slowmo/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -676,8 +747,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/pwn/souvlaki/" title="CrossCTF Finals 2018 : Souvlaki Space Station (Pwn)" class="md-nav__link">
-      CrossCTF Finals 2018 : Souvlaki Space Station (Pwn)
+    <a href="../../../pwn/souvlaki/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -736,8 +807,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/re/perfect/" title="CrossCTF Finals 2018 : Perfect (re)" class="md-nav__link">
-      CrossCTF Finals 2018 : Perfect (re)
+    <a href="../../../re/perfect/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -772,8 +843,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/re/rochefort6/" title="CrossCTF Finals 2018 : Rochefort 6 (re)" class="md-nav__link">
-      CrossCTF Finals 2018 : Rochefort 6 (re)
+    <a href="../../../re/rochefort6/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -808,8 +879,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../crossctf-finals2018/re/rochefort8/" title="CrossCTF Finals 2018 : Rochefort 8 (re)" class="md-nav__link">
-      CrossCTF Finals 2018 : Rochefort 8 (re)
+    <a href="../../../re/rochefort8/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -833,12 +904,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Crossctf quals2018
@@ -856,8 +925,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="CrossCTF Quals 2018" class="md-nav__link">
-      CrossCTF Quals 2018
+    <a href="../../../../crossctf-quals2018/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -887,8 +956,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../CYOA/" title="Choose Your Own Adventure - CrossCTF Quals 2018 (misc)" class="md-nav__link">
-      Choose Your Own Adventure - CrossCTF Quals 2018 (misc)
+    <a href="../../../../crossctf-quals2018/CYOA/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -902,12 +971,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
     <label class="md-nav__link" for="nav-3-3">
       Crypto
@@ -944,8 +1011,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../BabyRSA/" title="BabyRSA - CrossCTF Quals 2018 (crypto)" class="md-nav__link">
-      BabyRSA - CrossCTF Quals 2018 (crypto)
+    <a href="../../../../crossctf-quals2018/crypto/BabyRSA/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -959,12 +1026,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-2" type="checkbox" id="nav-3-3-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-2" type="checkbox" id="nav-3-3-2">
     
     <label class="md-nav__link" for="nav-3-3-2">
       BabyRSA2
@@ -980,76 +1045,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        BabyRSA2 - CrossCTF Quals 2018 (crypto)
-      </label>
-    
-    <a href="./" title="BabyRSA2 - CrossCTF Quals 2018 (crypto)" class="md-nav__link md-nav__link--active">
-      BabyRSA2 - CrossCTF Quals 2018 (crypto)
+  <li class="md-nav__item">
+    <a href="../../../../crossctf-quals2018/crypto/BabyRSA2/README/" title="README" class="md-nav__link">
+      README
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" title="Challenge" class="md-nav__link">
-    Challenge
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vulnerability" title="Vulnerability" class="md-nav__link">
-    Vulnerability
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rsa-algorithm" title="RSA Algorithm" class="md-nav__link">
-    RSA Algorithm
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-modulus-attack" title="Common modulus attack" class="md-nav__link">
-    Common modulus attack
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1083,8 +1083,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../lossyoracle/" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../../crossctf-quals2018/crypto/lossyoracle/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -1143,8 +1143,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../pwn/evenflow/" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../../crossctf-quals2018/pwn/evenflow/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -1179,8 +1179,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../pwn/impossible_shellcoding/" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../../crossctf-quals2018/pwn/impossible_shellcoding/README/" title="README" class="md-nav__link">
+      README
     </a>
   </li>
 
@@ -1228,23 +1228,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vulnerability" title="Vulnerability" class="md-nav__link">
-    Vulnerability
+  <a href="#solution" title="Solution" class="md-nav__link">
+    Solution
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rsa-algorithm" title="RSA Algorithm" class="md-nav__link">
-    RSA Algorithm
+  <a href="#factorization" title="Factorization" class="md-nav__link">
+    Factorization
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#common-modulus-attack" title="Common modulus attack" class="md-nav__link">
-    Common modulus attack
+  <a href="#find-n" title="Find n" class="md-nav__link">
+    Find n
   </a>
   
 </li>
@@ -1270,36 +1270,165 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/nushosilayer8/writeups/edit/master/writeups/crossctf-quals2018/crypto/BabyRSA2/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/nushosilayer8/writeups/edit/master/writeups/crossctf-finals2018/crypto/babyrsa3/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="babyrsa2-crossctf-quals-2018-crypto">BabyRSA2 - CrossCTF Quals 2018 (crypto)</h1>
+                <h1 id="crossctf-finals-2018-babyrsa3-crypto">CrossCTF Finals 2018 : BabyRSA3 (crypto)</h1>
 <blockquote>
-<p>Each time I asked for the flag, it gets encoded through RSA.... again... I'm lucky I kept all the values... AGAIN!</p>
-<p><a href="../out.txt">out.txt</a>.</p>
+<p>So I heard that you can flip the private and public information for RSA...</p>
+<p>Creator - prokarius (@prokarius)</p>
 </blockquote>
+<p>We are given a file <a href="../outNerfed.txt">outNerfed.txt</a>, which contains <code>c</code>, the ciphertext, <code>d</code>, the private exponent and <code>phi(n)</code>, which is equal to <code>(p-1)(q-1)</code>.</p>
 <h2 id="challenge">Challenge</h2>
-<p>We're give a list of RSA n(modulus),e(exponent),c(ciphertext)</p>
-<p>We notice that all the modulus are the same.</p>
-<h2 id="vulnerability">Vulnerability</h2>
-<h3 id="rsa-algorithm">RSA Algorithm</h3>
-<ol>
-<li>Firstly, 2 distinct primes are chosen, p and q</li>
-<li>Calculate the modulus with n=pq</li>
-<li>Calculate λ(n)=lcm(p-1,q-1)</li>
-<li>Choose the exponent e such that 1&lt;e&lt;λ(n) and e and n are coprime</li>
-<li>Calculate d=e-1 (mod λ(n))</li>
-<li>Calculate the ciphertext c with c=m<sup>e</sup> (mod n)
-Decryption is done with m=c<sup>d</sup> (mod n)</li>
-</ol>
-<h3 id="common-modulus-attack">Common modulus attack</h3>
-<p>Since pq mod n=(p mod n)(q mod n)mod n and m<sup>a</sup> m<sup>b</sup>=m<sup>ab</sup>, if we can find numbers x<sub>1</sub>x<sub>2</sub>... such that Σx<sub>i</sub>e<sub>i</sub>=1, then we can calculate m<sup>1</sup>, assuming all the messages are the same.</p>
-<p>Bézout's identity states that if x and y are coprime, then integers a,b exists such that ax+by=1, however, all our exponents share common prime factors, even any 4 exponents share a common factor. However, all 5 exponents do not share a common factor, thus, it is possible to find x<sub>1</sub>x<sub>2</sub>... such that Σx<sub>i</sub>e<sub>i</sub>=1.</p>
-<p>We can use the extended Euclidean algorithm, however, the numbers resulting from it could be pretty huge, so the equation is evaluated by Mathematica, giving us x=[3239,237,735,556,-6676]. For negative numbers, we can calculate the inverse modulo pretty quickly, and evaluating Πm<sup>x<sub>i</sub>e<sub>i</sup> (mod n) gives us the flag.</p>
-<p><a href="../BabyRSA2.py">exploit</a></p>
-<blockquote>
-<p>Flag:<code>crossctf{RSA_Challenges_Are_Too_Easy}</code></p>
-</blockquote>
+<p>To decrypt the ciphertext, we will need <code>d</code> and <code>n</code>. So the challenge here is to find a way to get <code>n</code> from <code>phi(n)</code>.</p>
+<h2 id="solution">Solution</h2>
+<h3 id="factorization">Factorization</h3>
+<p>To get <code>n</code> from <code>phi(n)</code>, the most sensical step is to find <code>p-1</code> and <code>q-1</code>, so that we can find <code>n=pq</code>. We tried to use <a href="https://sourceforge.net/projects/yafu/">yafu</a> to do it, and it worked very nicely.</p>
+<pre><code> daniel@daniel  ~/Downloads/yafu  ./yafu 'factor(25744472610420721576721354142700666534585707423276540379553111662924462766649397845238736588395849560582824664399879219093936415146333463826035714360316647265405615591383999147878527778914526369981160444050742606139799706884875928674153255909145624833489266194817757115584913491575124670523917871310421296173148930930573096639196103714702234087492)'
+
+
+fac: factoring 25744472610420721576721354142700666534585707423276540379553111662924462766649397845238736588395849560582824664399879219093936415146333463826035714360316647265405615591383999147878527778914526369981160444050742606139799706884875928674153255909145624833489266194817757115584913491575124670523917871310421296173148930930573096639196103714702234087492
+fac: using pretesting plan: normal
+fac: no tune info: using qs/gnfs crossover of 95 digits
+div: primes less than 10000
+fmt: 1000000 iterations
+rho: x^2 + 3, starting 1000 iterations on C346 
+rho: x^2 + 2, starting 1000 iterations on C346 
+rho: x^2 + 1, starting 1000 iterations on C346 
+pm1: starting B1 = 150K, B2 = gmp-ecm default on C346
+ecm: 0/30 curves on C334, B1=2K, B2=gmp-ecm default
+ecm: 0/29 curves on C322, B1=2K, B2=gmp-ecm default
+ecm: 0/28 curves on C310, B1=2K, B2=gmp-ecm default
+ecm: 0/27 curves on C272, B1=2K, B2=gmp-ecm default
+ecm: 0/26 curves on C259, B1=2K, B2=gmp-ecm default
+ecm: 1/25 curves on C246, B1=2K, B2=gmp-ecm default
+ecm: 0/23 curves on C221, B1=2K, B2=gmp-ecm default
+ecm: 1/22 curves on C196, B1=2K, B2=gmp-ecm default
+ecm: 1/20 curves on C183, B1=2K, B2=gmp-ecm default
+ecm: 0/18 curves on C170, B1=2K, B2=gmp-ecm default
+ecm: 2/17 curves on C157, B1=2K, B2=gmp-ecm default
+ecm: 3/14 curves on C144, B1=2K, B2=gmp-ecm default
+ecm: 1/10 curves on C132, B1=2K, B2=gmp-ecm default
+ecm: 8/8 curves on C119, B1=2K, B2=gmp-ecm default
+ecm: 3/74 curves on C119, B1=11K, B2=gmp-ecm default
+fac: factoring 48636585985082768736526784024200750021
+fac: using pretesting plan: normal
+fac: no tune info: using qs/gnfs crossover of 95 digits
+div: primes less than 10000
+fmt: 1000000 iterations
+rho: x^2 + 3, starting 1000 iterations on C38 
+rho: x^2 + 2, starting 1000 iterations on C38 
+rho: x^2 + 1, starting 1000 iterations on C38 
+pm1: starting B1 = 150K, B2 = gmp-ecm default on C38
+ecm: 0/30 curves on C38, B1=2K, B2=gmp-ecm default
+ecm: 0/29 curves on C26, B1=2K, B2=gmp-ecm default
+Total factoring time = 0.1867 seconds
+fac: factoring 52537838568268884632273629
+fac: using pretesting plan: normal
+fac: no tune info: using qs/gnfs crossover of 95 digits
+div: primes less than 10000
+fmt: 1000000 iterations
+rho: x^2 + 3, starting 1000 iterations on C26 
+rho: x^2 + 2, starting 1000 iterations on C26 
+rho: x^2 + 1, starting 1000 iterations on C26 
+pm1: starting B1 = 150K, B2 = gmp-ecm default on C26
+ecm: 1/30 curves on C26, B1=2K, B2=gmp-ecm default
+Total factoring time = 0.2959 seconds
+fac: factoring 9434943930960179869296047
+fac: using pretesting plan: normal
+fac: no tune info: using qs/gnfs crossover of 95 digits
+div: primes less than 10000
+fmt: 1000000 iterations
+rho: x^2 + 3, starting 1000 iterations on C25 
+rho: x^2 + 2, starting 1000 iterations on C25 
+rho: x^2 + 1, starting 1000 iterations on C25 
+pm1: starting B1 = 150K, B2 = gmp-ecm default on C25
+ecm: 1/30 curves on C25, B1=2K, B2=gmp-ecm default
+Total factoring time = 0.2060 seconds
+Total factoring time = 4.6255 seconds
+
+
+***factors found***
+
+P1 = 2
+P1 = 2
+P13 = 2767687179787
+P12 = 333600482773
+P13 = 6938103821809
+P13 = 3680247726403
+P13 = 8313722160551
+P13 = 6438418759151
+P13 = 6545600536253
+P13 = 6672422609813
+P13 = 6579600728639
+P13 = 3639128890921
+P13 = 9566431650679
+P13 = 9220079755217
+P106 = 2293498615990071511610820895302086940796564989168281123737588839386922876088484808070018553110125686555051
+P13 = 4065711354007
+P13 = 1973804930501
+P13 = 6060693342503
+P13 = 7265658595571
+P13 = 7230980905199
+P13 = 4754509728797
+P13 = 1984419944251
+
+ans = 1
+</code></pre>
+
+<p>Cleaning up the output, and putting them into a python script</p>
+<pre><code>a = []
+a.append(2)
+a.append(2)
+a.append(2767687179787)
+a.append(7230980905199)
+a.append(3680247726403)
+a.append(7265658595571)
+a.append(6545600536253)
+a.append(6579600728639)
+a.append(3639128890921)
+a.append(333600482773)
+a.append(9220079755217)
+a.append(8313722160551)
+a.append(9566431650679)
+a.append(6938103821809)
+a.append(6438418759151)
+a.append(2293498615990071511610820895302086940796564989168281123737588839386922876088484808070018553110125686555051)
+a.append(4754509728797)
+a.append(6672422609813)
+a.append(1973804930501)
+a.append(6060693342503)
+a.append(1984419944251)
+a.append(4065711354007)
+
+c = 5499541793182458916572235549176816842668241174266452504513113060755436878677967801073969318886578771261808846567771826513941339489235903308596884669082743082338194484742630141310604711117885643229642732544775605225440292634865971099525895746978617397424574658645139588374017720075991171820873126258830306451326541384750806605195470098194462985494
+d = 15664449102383123741256492823637853135125214807384742239549570131336662433268993001893338579081447660916548171028888182200587902832321164315176336792229529488626556438838274357507327295590873540152237706572328731885382033467068457038670389341764040515475556103158917133155868200492242619473451848383350924192696773958592530565397202086200003936447
+phi = 25744472610420721576721354142700666534585707423276540379553111662924462766649397845238736588395849560582824664399879219093936415146333463826035714360316647265405615591383999147878527778914526369981160444050742606139799706884875928674153255909145624833489266194817757115584913491575124670523917871310421296173148930930573096639196103714702234087492
+</code></pre>
+
+<h3 id="find-n">Find n</h3>
+<p>Now, we just need to split the factors into 2 sets, satisfying the condition that the product of the integers in each set, added by 1, will be a prime number. </p>
+<p>In other words, split the factors we got into <code>p-1</code> and <code>q-1</code>, while making sure that <code>p</code> and <code>q</code> are both prime.</p>
+<p>To do so, we can use <code>itertools.combinations</code> to generate different combinations of factors, and check if they fit the conditions above. Once we managed to find the <code>p</code> and <code>q</code> we need, all we need is to do left is find <code>m = c ^ d % n</code>.</p>
+<pre><code>import itertools
+import gmpy2
+
+def P(a):
+    return reduce(lambda x, y: x*y, a)
+
+for n in range(1, 12):
+    for i in itertools.combinations(a, n):
+        // check if p and q are prime
+        if (gmpy2.is_prime(P(i) + 1)) and gmpy2.is_prime(phi / P(i) + 1):
+            p = P(i) + 1
+            q = phi / P(i) + 1
+
+            // found n, decrypt the ciphertext
+            n = p * q
+            plain = gmpy2.powmod(c, d, n)
+            print hex(plain)[2:].decode('hex')
+            exit()
+</code></pre>
                 
                   
                 
@@ -1320,7 +1449,7 @@ Decryption is done with m=c<sup>d</sup> (mod n)</li>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../BabyRSA/" title="BabyRSA - CrossCTF Quals 2018 (crypto)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1329,19 +1458,19 @@ Decryption is done with m=c<sup>d</sup> (mod n)</li>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                BabyRSA - CrossCTF Quals 2018 (crypto)
+                Home
               </span>
             </div>
           </a>
         
         
-          <a href="../lossyoracle/" title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../fitblips/README/" title="README" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Home
+                README
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1371,9 +1500,9 @@ Decryption is done with m=c<sup>d</sup> (mod n)</li>
       
     </div>
     
-      <script src="../../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../../../assets/javascripts/application.a59e2a89.js"></script>
       
-      <script>app.initialize({version:"0.17.2",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"0.17.4",url:{base:"../../../.."}})</script>
       
     
     
