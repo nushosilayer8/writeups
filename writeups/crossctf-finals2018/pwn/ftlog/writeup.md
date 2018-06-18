@@ -1,6 +1,7 @@
 # CrossCTF Finals 2018 : FTLOG (Pwn)
 ### First Blood by : OSI Layer 8
 
+## Static Analysis
 Running ```file ftlog``` gives:
 ```
 ftlog: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, for GNU/Linux 3.2.0, BuildID[sha1]=c3d8b29303d27686f7190bf2e3d88fc857517a3b, not stripped
@@ -27,6 +28,8 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 The prints out some _art_, then allocates memory and marks it as 
 executable (```mprotect(v3, 512, 7)``` => ```mprotect(memory, memory_size, PROT_READ | PROT_WRITE | PROT_EXEC)```). Then, it reads in some input to the memory and executes our input.
 In other words, this is a simple shellcode challenge, but for ARM.
+
+## Solution
 
 The solution is to simply send in some ARM shellcode to spawn shell, then interact with it.
 
