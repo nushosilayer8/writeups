@@ -11,6 +11,26 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://osilayer8.cf/crossctf-quals2018/cyoa/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://osilayer8.cf/crossctf-quals2018/pwn/evenflow/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://osilayer8.cf/crossctf-quals2018/crypto/BabyRSA/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://osilayer8.cf/crossctf-quals2018/crypto/BabyRSA2/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://osilayer8.cf/crossctf-finals2018/README/</loc>
      <lastmod>2018-06-19</lastmod>
      <changefreq>daily</changefreq>
@@ -52,6 +72,21 @@
     </url>
     <url>
      <loc>https://osilayer8.cf/crossctf-finals2018/re/rochefort8/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://osilayer8.cf/crossctf-finals2018/web/gocoin/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://osilayer8.cf/crossctf-finals2018/web/gocoinplus/README/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://osilayer8.cf/crossctf-finals2018/web/gocoinplusplus/README/</loc>
      <lastmod>2018-06-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
