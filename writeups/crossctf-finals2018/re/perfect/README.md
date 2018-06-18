@@ -9,7 +9,7 @@ We were given a binary [perfect](./perfect).
 
 Opening it up in IDA gives us the following pseudocode.
 
-```
+```c
 __int64 __fastcall main(__int64 a1, char **a2, char **a3)
 {
   __int64 v3; // rdx
@@ -84,7 +84,7 @@ Before continuing, we need to know what does the `_gmpz_xxx` functions do. Refer
 
 ### pseudocode
 So, we can simplify the code above further to be
-```
+```c
 v8 = 0
 v9 = 0
 v11 = 0
@@ -115,7 +115,7 @@ Hmm, suddenly there's `v12` and `v10` which we did not initialize at the start. 
 
 Looking back at the top of our original pseudocode
 
-```
+```c
 char v8; // [rsp+10h] [rbp-460h]
 char v9; // [rsp+20h] [rbp-450h]
 int v10; // [rsp+24h] [rbp-44Ch]
@@ -142,7 +142,7 @@ A pointer to an array of limbs which is the magnitude. These are stored “littl
 
 But the manual didn't tell us which field is at which offset. So, we used [onlinegdb](https://www.onlinegdb.com/online_c_compiler) to test it out, using the following code.
 
-```
+```c
 #include <stdio.h>
 #include <gmp.h>
 int main()
@@ -167,7 +167,7 @@ So, `v10` and `v12` are pointing the `_mp_size` field of `v9` and `v11`. Checkin
 
 Cleaning up our pseudocode
 
-```
+```python
 scanf("%1023s", &v15)
 
 v11 = int(v15) - 1
@@ -181,8 +181,8 @@ while (v11 != 0) {
 
 if (v13 == v8 && v13 > 2^213)
 	print "random_seed(" + v8 + ")"
-    puts("k = \"\".join([chr(random.randint(0, 255)) for i in range(35)])");
-    puts("xor(k, 754e26ccd4b1bfafb3ffbdaa748780b7f0e0c3ae9acc3c008670f0fafd34f8ffa596db)");
+  puts("k = \"\".join([chr(random.randint(0, 255)) for i in range(35)])");
+  puts("xor(k, 754e26ccd4b1bfafb3ffbdaa748780b7f0e0c3ae9acc3c008670f0fafd34f8ffa596db)");
 ```
 
 We see above that `v8` is the sum of all factors of `v13`, then the program checks if it is equal to our original input, and if it is greater than 2^213. Then, our seed will just be our input number.
@@ -193,7 +193,7 @@ This means we are looking for [perfect numbers](https://en.wikipedia.org/wiki/Li
 Since there are a lot of numbers satisfying the condition, we take a few *p*s from the wikipedia page, and try them out. We will not run the program with these numbers, since it would take **very** long.
 
 Cleaning up the code that is supposedly given
-```
+```python
 import random
 from pwn import *
 

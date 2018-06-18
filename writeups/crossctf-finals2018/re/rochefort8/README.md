@@ -13,7 +13,7 @@ Like [rochefort6](../rochefort6), it asks for a number, we choose 8, then it pre
 
 Being noob and using IDA gives us
 
-```
+```c
 unsigned __int64 sub_401209()
 {
   __int64 v1; // [rsp+8h] [rbp-158h]
@@ -216,7 +216,7 @@ Very long code, to summarize, it
 
 In `some_func` and `sub_400F22`, we see 3 more different functions.
 
-```
+```c
 __int64 __fastcall sub_400D4E(__int64 a1)
 {
   __int64 result; // rax
@@ -263,7 +263,7 @@ I wrote a [script](./solve.py) with angr to make things easier. (The following i
 
 First things first, create a project in angr, and initialize a state that starts at `sub_401209`, which is the function called after we enter "8" into the program (because everything before that is useless). 
 
-```
+```python
 binary_name = sys.argv[1]
 project = angr.Project(binary_name)
 initial_state = project.factory.blank_state(addr=0x401209)
@@ -274,7 +274,7 @@ Also, I have to "define" `scanf` myself because angr does not work well with for
 That being said, I also have to "skip" the instruction at 0x40126f which calls `printf`. 
 (If you reversed the binary, you may feel that something's wrong, because the output of `printf` is important. Yes, I made a mistake, which I'll mention later.)
 
-```
+```python
 initial_state.globals['solutions'] = []
 
 class ReplacementScanf(angr.SimProcedure):
@@ -327,7 +327,7 @@ def skip_printf(state):
 
 Then, I created a `simulation_manager` to explore the binary, with the target address at 0x401441, which is the first instruction after we passed the check, and to avoid 0x40145d, which is the first instruction after we failed the check.
 
-```
+```python
 simgr = project.factory.simgr(initial_state)
 
 simgr.explore(find=0x401441, avoid=0x40145d)
@@ -335,7 +335,7 @@ simgr.explore(find=0x401441, avoid=0x40145d)
 
 If the simulation managed to reach the target address, print out the values in our input.
 
-```
+```python
 if simgr.found:
 	print 'found'
 	solution_state = simgr.found[0]
@@ -364,7 +364,7 @@ But I felt confident that using angr should work, I must be missing something th
 ### Some re-addressing
 Fixing this was pretty easy, just initialize the stack frame of our state. And choose our state to start at the first instruction after `printf` was called, since everything before that was just lame stuff like function prologue, saving stack canary, calling `ptrace` so that we couldn't run gdb, etc.
 
-```
+```python
 leak = sys.argv[2]
 initial_state = project.factory.blank_state(addr=0x401274)
 initial_state.regs.rsp = leak - 0x60

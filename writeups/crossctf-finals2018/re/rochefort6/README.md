@@ -15,7 +15,7 @@ At first the program prompts for a number, 6 would execute the code for this cha
 
 Opening up the function for 6 in IDA gives us
 
-```
+```c
 unsigned __int64 sub_400AC3()
 {
   signed __int64 v0; // r12
@@ -63,7 +63,7 @@ In short, what the program does is it generates a random number, then performs s
 
 Let's look at the function at 0x400a7f.
 
-```
+```c
 __int64 __fastcall sub_400A7F(unsigned __int8 *a1, __int64 a2)
 {
   __int64 result; // rax
@@ -91,7 +91,7 @@ Here it seems that the program just takes every byte of the string, or more prec
 
 Looking at 0x400AB2
 
-```
+```c
 __int64 __fastcall sub_400AB2(int a1)
 {
   return (unsigned int)(1131573107 * a1 + 1933792326);
@@ -128,7 +128,7 @@ To recap, the program
 
 As mentioned, we will use z3 to solve this. So, let's prepare the functions that are being used in the challenge first.
 
-```
+```python
 # 0x400ab2
 def ab2(a):
 	return 0x43726f73 * a + 0x73435446
@@ -148,7 +148,7 @@ Since the numbers are all playing in 64-bit space, there will be overflowing hap
 
 We populate an array of `BitVec`s, which are 8 bit long. Then, we just pass that array into the functions we defined earlier.
 
-```
+```python
 s = Solver()
 
 inp = []
@@ -160,7 +160,7 @@ outp = a7f(inp, len(inp))
 
 Now, we just need z3 to solve for the current input that would provide the output we want. Before that, we need to add a constraint so that the output using that input would match the output given by the challenge.
 
-```
+```python
 s.append(outp == value)
 s.check()
 
@@ -177,13 +177,13 @@ return ''.join(sol)
 
 But this didn't work..., because apparently when we send in our input it will end with a newline byte (0x0a). So, we need to add a constraint, that the last byte is equal to 0x0a.
 
-```
+```python
 s.append(inp[i - 1] == 0x0a)
 ```
 
 Finally, because the input size could range from 1 to 1024, trying to solve for when the size is 1023 is not a wise idea. We made it such that it will try different lengths ranging from 1 to 1024.
 
-```
+```python
 def solve_for(value):
 	for i in range(1, 1024):
 		s = Solver()
@@ -212,7 +212,7 @@ def solve_for(value):
 
 All is left is to connect to the server, and solve their outputs. Earlier in our pseudocode, we see that the program asks for a number 20 times, so we had to run a loop.
 
-```
+```python
 r = remote('ctf.pwn.sg', 16667) # process('./towerofbeer')
 r.sendline('6')
 
