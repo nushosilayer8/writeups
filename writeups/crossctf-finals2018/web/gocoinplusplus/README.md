@@ -82,5 +82,5 @@ fmt.Println(err) // nil is SUCCESS! wohoo
 
 [Here's the full code](gocoin2jwt.go). 
 
-Now I've got a valid token, I can simply perform the request to /flag with the token set inside the cookie. Many ways to do than, including using DevTools. 
+Now I've got a valid token, I can simply perform the request to /flag with the token set inside the cookie. Many ways to do that, including using DevTools. 
 
