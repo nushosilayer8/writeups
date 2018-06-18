@@ -1,10 +1,17 @@
 site_name: OSI Layer 8
-site_url: https://nush-osi-layer-8.github.io/writeups/
-repo_url: https://github.com/nush-osi-layer-8/writeups/
-docs_dir: 'writeups'
+site_description: Our CTF writeups
+site_author: OSI Layer 8
+site_url: https://osilayer8.cf/
+
+repo_name: nushosilayer8
+repo_url: https://github.com/nushosilayer8/writeups/
+edit_uri: edit/master/writeups/
+
+docs_dir: writeups
 
 theme: 
-    name: 'material'
-    palette: 
-        primary: 'light blue'
-        accent: 'blue'
+  name: material
+  logo: img/logo_white.svg
+  palette: 
+    primary: light blue
+    accent: blue
