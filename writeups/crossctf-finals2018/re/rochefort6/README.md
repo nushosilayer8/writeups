@@ -1,4 +1,4 @@
-# CrossCTF Finals 2018 : Rochefort 6
+# CrossCTF Finals 2018 : Rochefort 6 (re)
 
 > Nothing like a Rochefort 6 in the hot summer weather...
 >
