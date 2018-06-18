@@ -71,7 +71,7 @@ int main() {
     }
 }
 ```
-I actually had this function in IDA Pro's analysis, but I thought it was some junk:
+I actually had this function in IDA's analysis, but I thought it was some junk:
 ```c
 int __fastcall sub_105EC(int a1, int a2)
 {

