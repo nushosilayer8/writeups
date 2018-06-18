@@ -18,9 +18,16 @@ theme:
 
 pages:
   - Home: README.md
-  - CrossCTF 2018 Qualifiers: crossctf-quals2018/README.md
+
+  - CrossCTF 2018 Qualifiers: 
+    - Overview: crossctf-quals2018/README.md
+    - CYOA: crossctf-quals2018/cyoa/README.md
+    - Even Flow: crossctf-quals2018/pwn/evenflow/README.md
+    - BabyRSA: crossctf-quals2018/crypto/BabyRSA/README.md
+    - BabyRSA 2: crossctf-quals2018/crypto/BabyRSA2/README.md
+
   - CrossCTF 2018 Finals:
-    - Home: crossctf-finals2018/README.md
+    - Overview: crossctf-finals2018/README.md
     - Pwn:
       - FTLOG: crossctf-finals2018/pwn/ftlog/README.md
       - Slowmo: crossctf-finals2018/pwn/slowmo/README.md
