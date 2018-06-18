@@ -15,3 +15,28 @@ theme:
   palette: 
     primary: light blue
     accent: blue
+
+pages:
+  - Home: README.md
+  - CrossCTF 2018 Qualifiers: crossctf-quals2018/README.md
+  - CrossCTF 2018 Finals:
+    - Home: crossctf-finals2018/README.md
+    - Pwn:
+      - FTLOG: crossctf-finals2018/pwn/ftlog/README.md
+      - Slowmo: crossctf-finals2018/pwn/slowmo/README.md
+      - Coca Cola: crossctf-finals2018/pwn/cocacola/README.md
+      - GruffyBear: crossctf-finals2018/pwn/gruffybear/README.md
+      - Souvlaki Space Station: crossctf-finals2018/pwn/souvlaki/README.md
+    - Reversing:
+      - Perfect: crossctf-finals2018/re/perfect/README.md
+      - 'Tower Of Beer: Rochefort 6': crossctf-finals2018/re/rochefort6/README.md
+      - 'Tower Of Beer: Rochefort 8': crossctf-finals2018/re/rochefort8/README.md
+    - Crypto:
+      - Fitblips: crossctf-finals2018/crypto/fitblips/README.md
+      - BabyRSA: crossctf-finals2018/crypto/babyrsa3/README.md
+    - Misc:
+      - The Evilness: crossctf-finals2018/misc/evil/README.md
+      - Choose Your Own Adventure: crossctf-finals2018/misc/cyoa/cyoa.py
+    - Mobile:
+      - Human Powered Flag Generator: crossctf-finals2018/mobile/human/README.md
+# vim: noai:ts=2:sw=2
