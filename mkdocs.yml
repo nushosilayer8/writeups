@@ -38,6 +38,10 @@ pages:
       - Perfect: crossctf-finals2018/re/perfect/README.md
       - 'Tower Of Beer: Rochefort 6': crossctf-finals2018/re/rochefort6/README.md
       - 'Tower Of Beer: Rochefort 8': crossctf-finals2018/re/rochefort8/README.md
+    - Web:
+      - GoCoin!: crossctf-finals2018/web/gocoin/README.md
+      - GoCoin! Plus: crossctf-finals2018/web/gocoinplus/README.md
+      - GoCoin! Plus Plus: crossctf-finals2018/web/gocoinplusplus/README.md
     - Crypto:
       - Fitblips: crossctf-finals2018/crypto/fitblips/README.md
       - BabyRSA: crossctf-finals2018/crypto/babyrsa3/README.md
