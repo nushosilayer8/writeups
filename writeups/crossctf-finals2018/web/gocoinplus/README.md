@@ -8,6 +8,8 @@
 > Update: I've improved it! More secures and with real cryptos, it's a true cryptocoin now!
 > 
 > http://ctf.pwn.sg:2053
+>
+> Creator - quanyang (@quanyang)
 
 ## Challenge
 

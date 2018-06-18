@@ -8,6 +8,8 @@
 > Update: I've improved it! More secures and with real cryptos, it's a true cryptocoin now! Update: Stupid me wrote a broken challenge, now its really fixed!
 > 
 > http://ctf.pwn.sg:1389
+>
+> Creator - quanyang (@quanyang)
 
 ## Challenge
 

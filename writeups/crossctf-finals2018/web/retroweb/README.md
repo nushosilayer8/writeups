@@ -4,6 +4,8 @@
 > Not so easy SQL injection at all.
 > 
 > http://ctf.pwn.sg:8180
+>
+> Creator - quanyang (@quanyang)
 
 ## Challenge
 
