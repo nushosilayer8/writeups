@@ -75,7 +75,10 @@ DFqKsA30lPd0pHbSNwIDAQAB
 tokenString, err := Wallet(10000, 10000, []byte(myKey))
 fmt.Println(err, tokenString)
 _, _, err := ParseWallet(tokenString, myKey)
-fmt.Println(err)
+fmt.Println(err) // nil is SUCCESS! wohoo
 ```
 
 [Here's the full code](gocoin2jwt.go). 
+
+Now I've got a valid token, I can simply perform the request to /flag with the token set inside the cookie. Many ways to do than, including using DevTools. 
+
