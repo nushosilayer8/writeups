@@ -102,7 +102,9 @@ unsigned __int64 sub_401209()
   sub_400CAC();
   return __readfsqword(0x28u) ^ v36;
 }
+```
 
+```c
 __int64 __fastcall sub_4009D6(__int64 a1)
 {
   __int64 result; // rax
@@ -126,7 +128,9 @@ __int64 __fastcall sub_4009D6(__int64 a1)
   }
   return result;
 }
+```
 
+```c
 __int64 __fastcall some_func(__int64 a1, __int64 a2, _QWORD *a3)
 {
   __int64 result; // rax
@@ -152,7 +156,9 @@ __int64 __fastcall some_func(__int64 a1, __int64 a2, _QWORD *a3)
   }
   return result;
 }
+```
 
+```c
 _BOOL8 __fastcall sub_400F22(__int64 a1, __int64 a2, __int64 a3, __int64 a4, char a5)
 {
   char v6; // [rsp+4h] [rbp-74h]
@@ -250,6 +256,8 @@ __int64 __fastcall sub_400D4E(__int64 a1)
   return result;
 }
 ```
+
+This function uses the argument passed in as an array, and returns the value in an index that is based on the first element in the array. 
 
 The other 2 were pretty much the same, just that the offset values were different.
 
