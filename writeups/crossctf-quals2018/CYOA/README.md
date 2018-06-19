@@ -7,6 +7,7 @@
 > Non-standard flag format: <code>[A-Z0-9]+</code>
 
 ## Challenge
+
 We are given the hints in this format:
 
 >01 01 02, Score: 04

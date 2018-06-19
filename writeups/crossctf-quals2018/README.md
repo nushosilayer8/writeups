@@ -3,52 +3,58 @@
 ## Pwn
 
 ### Easynote
-[binary](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/easynote/easynote)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/easynote/easynote.py)
+[binary](pwn/easynote/easynote)
+[exploit](pwn/easynote/easynote.py)
 
 ### Even Flow
-[writeup](https://github.com/nush-osi-layer-8/writeups/writeups/tree/master/crossctf-quals2018/pwn/evenflow)
-[binary](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/evenflow/evenflow.py)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/evenflow/solve.py)
+[writeup](pwn/evenflow/README.md)
+[binary](pwn/evenflow/evenflow.py)
+[exploit](pwn/evenflow/solve.py)
 
 ### Impossible Shellcoding
-[binary](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/impossible_shellcoding/impossible_shellcoding)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/impossible_shellcoding/impossible_shellcoding.py)
+[binary](pwn/impossible_shellcoding/impossible_shellcoding)
+[exploit](pwn/impossible_shellcoding/impossible_shellcoding.py)
 
 ### Quiet Moon
-[binary](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/quietmoon/quietmoon)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/quietmoon/quietmoon.py)
+[binary](pwn/quietmoon/quietmoon)
+[exploit](pwn/quietmoon/quietmoon.py)
 
 ### Real Baby Pwnable
-[binary](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/realbabypwn/realbabypwn)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/realbabypwn/realbabypwn.py)
+[binary](pwn/realbabypwn/realbabypwn)
+[exploit](pwn/realbabypwn/realbabypwn.py)
 
 ### Skipping Rope
-[binary](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/skippingrope/skippingrope)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/pwn/skippingrope/skippingrope.py)
+[binary](pwn/skippingrope/skippingrope)
+[exploit](pwn/skippingrope/skippingrope.py)
 
 ## Reverse Engineering
 
 ### GoGoGo
+
 Manual Labour
 
 ## Misc
+
 ### CYOA
-[writeup](CYOA/)
+
+[writeup](cyoa/README.md)
 
 ## Crypto
+
 ### Lossy ORacle
-[writeup](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/)
-[script](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/lossyoracle.py)
-[exploit](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/solve.py)
-[flag](https://github.com/nush-osi-layer-8/writeups/writeups/raw/master/crossctf-quals2018/crypto/lossyoracle/flag)
+
+[script](crypto/lossyoracle/lossyoracle.py)
+[exploit](crypto/lossyoracle/solve.py)
+[flag](crypto/lossyoracle/flag)
 
 ### BabyRSA
-[writeup](crypto/BabyRSA/)
+
+[writeup](crypto/BabyRSA/README.md)
 [exploit](crypto/BabyRSA/BabyRSA.py)
 
 ### BabyRSA2
-[writeup](crypto/BabyRSA2/)
+
+[writeup](crypto/BabyRSA2/README.md)
 [exploit](crypto/BabyRSA2/BabyRSA2.py)
 
 
