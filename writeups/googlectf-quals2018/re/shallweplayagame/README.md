@@ -163,7 +163,9 @@ On the other hand, apktool **disassembles** the apk file, which means it does no
 ### Using Frida
 I decided to use Frida as I didn't really feel like messing with the smali code at the time (wasn't very hard actually, someone else in the team did it).
 
-I figured the most convenient way to do it is to hook `onCreate`, let it initialize the stuff it needs, and then call `n()` 1000000 times from there. (In Frida, javascript is used for instrumentation.)
+I figured the most convenient way to do it is to hook `onCreate`, let it initialize the stuff it needs, and then call `n()` 1000000 times from there. (`n` is the original function name of `updateScore`, `m` is `showFlag`)
+
+*frida uses javascript to do instrumentation*
 
 ```js
 Java.perform(function() {
@@ -263,6 +265,8 @@ Java.perform(function() {
 	script.load()
 	device.resume(pid)
 ```
+
+Full script [here](./solve.py).
 
 ### Flag
 This approach was really slow, it took around half an hour to finally get the flag. In contrast, if I'd just modified the smali code, it would have been complete in less than a second.
