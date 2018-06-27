@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@f/icon" android:layout_width="@d/notification_large_icon_width" android:layout_height="@d/notification_large_icon_height" android:scaleType="centerCrop"/>

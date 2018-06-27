@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@c/ripple_material_light">
+    <item android:id="@android:id/mask">
+        <inset android:insetLeft="@d/compat_button_inset_horizontal_material" android:insetRight="@d/compat_button_inset_horizontal_material" android:insetTop="@d/compat_button_inset_vertical_material" android:insetBottom="@d/compat_button_inset_vertical_material">
+            <shape android:shape="rectangle">
+                <corners android:radius="@d/compat_control_corner_material"/>
+                <solid android:color="@android:color/white"/>
+                <padding android:left="@d/compat_button_padding_horizontal_material" android:top="@d/compat_button_padding_vertical_material" android:right="@d/compat_button_padding_horizontal_material" android:bottom="@d/compat_button_padding_vertical_material"/>
+            </shape>
+        </inset>
+    </item>
+</ripple>
