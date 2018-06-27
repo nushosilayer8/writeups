@@ -21,7 +21,7 @@ pages:
 
   - CrossCTF 2018 Qualifiers: 
     - Overview: crossctf-quals2018/README.md
-    - CYOA: crossctf-quals2018/cyoa/README.md
+    - CYOA: crossctf-quals2018/CYOA/README.md
     - Even Flow: crossctf-quals2018/pwn/evenflow/README.md
     - BabyRSA: crossctf-quals2018/crypto/BabyRSA/README.md
     - BabyRSA 2: crossctf-quals2018/crypto/BabyRSA2/README.md
@@ -53,4 +53,9 @@ pages:
       - Choose Your Own Adventure: crossctf-finals2018/misc/cyoa/cyoa.py
     - Mobile:
       - Human Powered Flag Generator: crossctf-finals2018/mobile/human/README.md
+
+  - GoogleCTF 2018 Qualifiers:
+    - Overview: googlectf-quals2018/README.md
+    - Reversing:
+      - Shall we play a game: googlectf-quals2018/re/shallweplayagame/README.md
 # vim: noai:ts=2:sw=2

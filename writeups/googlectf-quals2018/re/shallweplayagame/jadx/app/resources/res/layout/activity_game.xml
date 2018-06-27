@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rows" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:layout_constraintBottom_toBottomOf="@+id/layout">
+        <TextView android:textSize="15sp" android:id="@+id/score" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

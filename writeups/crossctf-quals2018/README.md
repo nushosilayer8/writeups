@@ -37,7 +37,7 @@ Manual Labour
 
 ### CYOA
 
-[writeup](cyoa/README.md)
+[writeup](CYOA/README.md)
 
 ## Crypto
 
