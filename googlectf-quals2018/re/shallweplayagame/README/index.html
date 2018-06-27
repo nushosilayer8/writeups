@@ -1167,7 +1167,8 @@ class N {
 <p>On the other hand, apktool <strong>disassembles</strong> the apk file, which means it does not do any code generation by itself, preserving the project structure so it can easily build a patched apk file from that.</p>
 <h3 id="using-frida">Using Frida</h3>
 <p>I decided to use Frida as I didn't really feel like messing with the smali code at the time (wasn't very hard actually, someone else in the team did it).</p>
-<p>I figured the most convenient way to do it is to hook <code>onCreate</code>, let it initialize the stuff it needs, and then call <code>n()</code> 1000000 times from there. (In Frida, javascript is used for instrumentation.)</p>
+<p>I figured the most convenient way to do it is to hook <code>onCreate</code>, let it initialize the stuff it needs, and then call <code>n()</code> 1000000 times from there. (<code>n</code> is the original function name of <code>updateScore</code>, <code>m</code> is <code>showFlag</code>)</p>
+<p><em>frida uses javascript to do instrumentation</em></p>
 <pre><code class="js">Java.perform(function() {
     var GameActivity = Java.use('com.google.ctf.shallweplayagame.GameActivity');
 
