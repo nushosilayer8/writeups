@@ -61,7 +61,8 @@ nav:
       - Overview: googlectf-quals2018/README.md
       - Reversing:
         - Shall we play a game: googlectf-quals2018/re/shallweplayagame/README.md
-  - Organised:
+  - Organising:
     - Geekcamp 2018+ CTF: https://github.com/nushosilayer8/geekcamp2018plus-ctf
+  - Geekcamp 2019 Call for Challenges: organising/geekcamp2019-ctf/call-for-challenges.md
 
 # vim: noai:ts=2:sw=2
