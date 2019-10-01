@@ -18,7 +18,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Competitions:
+  - Participating:
     - CrossCTF 2018 Qualifiers: 
       - Overview: crossctf-quals2018/README.md
       - CYOA: crossctf-quals2018/CYOA/README.md
