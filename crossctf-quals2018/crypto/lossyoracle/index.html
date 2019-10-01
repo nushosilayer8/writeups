@@ -1,0 +1,1306 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Our CTF writeups">
+      
+      
+        <link rel="canonical" href="https://osilayer8.makerforce.io/crossctf-quals2018/crypto/lossyoracle/">
+      
+      
+        <meta name="author" content="OSI Layer 8">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>LossyOracle - OSI Layer 8</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#lossyoracle-crossctf-quals-2018-crypto" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://osilayer8.makerforce.io/" title="OSI Layer 8" class="md-header-nav__button md-logo">
+          
+            <img src="../../../img/logo_white.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              OSI Layer 8
+            </span>
+            <span class="md-header-nav__topic">
+              
+                LossyOracle
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/nushosilayer8/writeups/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    nushosilayer8
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://osilayer8.makerforce.io/" title="OSI Layer 8" class="md-nav__button md-logo">
+      
+        <img src="../../../img/logo_white.svg" width="48" height="48">
+      
+    </a>
+    OSI Layer 8
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/nushosilayer8/writeups/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    nushosilayer8
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Competitions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Competitions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      CrossCTF 2018 Qualifiers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        CrossCTF 2018 Qualifiers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CYOA/" title="CYOA" class="md-nav__link">
+      CYOA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pwn/evenflow/" title="Even Flow" class="md-nav__link">
+      Even Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pwn/impossible_shellcoding/" title="Impossible Shellcoding" class="md-nav__link">
+      Impossible Shellcoding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BabyRSA/" title="BabyRSA" class="md-nav__link">
+      BabyRSA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BabyRSA2/" title="BabyRSA 2" class="md-nav__link">
+      BabyRSA 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        LossyOracle
+      </label>
+    
+    <a href="./" title="LossyOracle" class="md-nav__link md-nav__link--active">
+      LossyOracle
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    Challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability" class="md-nav__link">
+    Vulnerability
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bitwise-or" class="md-nav__link">
+    Bitwise OR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitwise-and" class="md-nav__link">
+    Bitwise AND
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploit" class="md-nav__link">
+    Exploit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-many-ciphertexts" class="md-nav__link">
+    Get many ciphertexts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-them-all" class="md-nav__link">
+    AND them all!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combining-all-together" class="md-nav__link">
+    Combining all together
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-flag" class="md-nav__link">
+    Reading the flag
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      CrossCTF 2018 Finals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        CrossCTF 2018 Finals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-2" type="checkbox" id="nav-2-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2-2">
+      Pwn
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-2">
+        Pwn
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/pwn/ftlog/" title="FTLOG" class="md-nav__link">
+      FTLOG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/pwn/slowmo/" title="Slowmo" class="md-nav__link">
+      Slowmo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/pwn/cocacola/" title="Coca Cola" class="md-nav__link">
+      Coca Cola
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/pwn/gruffybear/" title="GruffyBear" class="md-nav__link">
+      GruffyBear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/pwn/souvlaki/" title="Souvlaki Space Station" class="md-nav__link">
+      Souvlaki Space Station
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-3" type="checkbox" id="nav-2-2-3">
+    
+    <label class="md-nav__link" for="nav-2-2-3">
+      Reversing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-3">
+        Reversing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/re/perfect/" title="Perfect" class="md-nav__link">
+      Perfect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/re/rochefort6/" title="Tower Of Beer: Rochefort 6" class="md-nav__link">
+      Tower Of Beer: Rochefort 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/re/rochefort8/" title="Tower Of Beer: Rochefort 8" class="md-nav__link">
+      Tower Of Beer: Rochefort 8
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/re/iamrusty/" title="iamrusty" class="md-nav__link">
+      iamrusty
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-4" type="checkbox" id="nav-2-2-4">
+    
+    <label class="md-nav__link" for="nav-2-2-4">
+      Web
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-4">
+        Web
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/web/gocoin/" title="GoCoin!" class="md-nav__link">
+      GoCoin!
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/web/gocoinplus/" title="GoCoin! Plus" class="md-nav__link">
+      GoCoin! Plus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/web/gocoinplusplus/" title="GoCoin! Plus Plus" class="md-nav__link">
+      GoCoin! Plus Plus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/web/terminal/" title="The Terminal" class="md-nav__link">
+      The Terminal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/web/retroweb/" title="RetroWeb" class="md-nav__link">
+      RetroWeb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/web/cachecreek/" title="CacheCreek" class="md-nav__link">
+      CacheCreek
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-5" type="checkbox" id="nav-2-2-5">
+    
+    <label class="md-nav__link" for="nav-2-2-5">
+      Crypto
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-5">
+        Crypto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/crypto/fitblips/" title="Fitblips" class="md-nav__link">
+      Fitblips
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/crypto/babyrsa3/" title="BabyRSA" class="md-nav__link">
+      BabyRSA
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-6" type="checkbox" id="nav-2-2-6">
+    
+    <label class="md-nav__link" for="nav-2-2-6">
+      Misc
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-6">
+        Misc
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/misc/evil/" title="The Evilness" class="md-nav__link">
+      The Evilness
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/misc/cyoa/cyoa.py" title="Choose Your Own Adventure" class="md-nav__link">
+      Choose Your Own Adventure
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-7" type="checkbox" id="nav-2-2-7">
+    
+    <label class="md-nav__link" for="nav-2-2-7">
+      Mobile
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-7">
+        Mobile
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../crossctf-finals2018/mobile/human/" title="Human Powered Flag Generator" class="md-nav__link">
+      Human Powered Flag Generator
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      GoogleCTF 2018 Qualifiers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        GoogleCTF 2018 Qualifiers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../googlectf-quals2018/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2" type="checkbox" id="nav-2-3-2">
+    
+    <label class="md-nav__link" for="nav-2-3-2">
+      Reversing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-3-2">
+        Reversing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../googlectf-quals2018/re/shallweplayagame/" title="Shall we play a game" class="md-nav__link">
+      Shall we play a game
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Organising
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Organising
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/nushosilayer8/geekcamp2018plus-ctf" title="Geekcamp 2018+ CTF" class="md-nav__link">
+      Geekcamp 2018+ CTF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../organising/geekcamp2019-ctf/call-for-challenges/" title="Geekcamp 2019 Call for Challenges" class="md-nav__link">
+      Geekcamp 2019 Call for Challenges
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    Challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability" class="md-nav__link">
+    Vulnerability
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bitwise-or" class="md-nav__link">
+    Bitwise OR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitwise-and" class="md-nav__link">
+    Bitwise AND
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploit" class="md-nav__link">
+    Exploit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-many-ciphertexts" class="md-nav__link">
+    Get many ciphertexts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-them-all" class="md-nav__link">
+    AND them all!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combining-all-together" class="md-nav__link">
+    Combining all together
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-flag" class="md-nav__link">
+    Reading the flag
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/nushosilayer8/writeups/edit/master/writeups/crossctf-quals2018/crypto/lossyoracle/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="lossyoracle-crossctf-quals-2018-crypto">LossyORacle - CrossCTF Quals 2018 (crypto)</h1>
+<blockquote>
+<p>No one believes I can recover the message from this crappy ORacle.</p>
+<p>nc ctf.pwn.sg 1401</p>
+<p>Creator - prokarius (@prokarius)</p>
+</blockquote>
+<h2 id="challenge">Challenge</h2>
+<p>We are given a service that runs the python script <a href="https://raw.githubusercontent.com/nush-osi-layer-8/writeups/master/crossctf-quals2018/crypto/lossyoracle/lossyoracle.py">lossyoracle.py</a>. We can connect to the service using <code>nc</code> and it will spit out the encrypted flag.</p>
+<p>The script reads the flag file, then encrypts it with a key using the following function.</p>
+<pre><code>def encrypt(data, key, func):
+    length = len(key)
+    output = []
+    for i in range(len(data)):
+        output.append(func(data[i],key[i%length]))
+    return bytes(output)
+</code></pre>
+
+<p>From the following code, we notice that <code>func</code> over here is just a bitwise OR (|) operation applied to each byte in the flag with the key.</p>
+<pre><code>function = [lambda x,y:x&amp;y, lambda x,y:x|y]
+print (base64.b64encode(encrypt(data, key, function[1])).decode(&quot;utf-8&quot;))
+</code></pre>
+
+<p>One problematic thing is, the key is always random. Not only that the bytes in the key are random every time, but the length of the key is also random every time!</p>
+<pre><code>key = []
+for i in range(random.randrange(64,128)):
+    key.append(random.randrange(0,255))
+key = bytes(key)
+</code></pre>
+
+<h2 id="vulnerability">Vulnerability</h2>
+<p>Or maybe it is not problematic for us, but a helpful vulnerability instead.</p>
+<p>For the following, we will refer to ON as a bit being equal to 1, while OFF as a bit being equal to 0.</p>
+<h3 id="bitwise-or">Bitwise OR</h3>
+<p>The property of a bitwise OR operation is that bits that are ON (equal to 1) will always stay ON, no matter what the bit is ORed with.</p>
+<p>This means, for each byte in the flag, for every single bit in them, as long as they are ON, no matter what key is used, they will always be ON after encryption.
+On the other hand, for bits in the flag that are OFF, sometimes, since the key is randomly generated, they may end up still being OFF after encryption.</p>
+<p>This means, we can take a lot different ciphertexts, and in at least one of them, the bits that are supposed to be OFF in the original flag must be OFF, since they definitely can't be ON forever, considering we are using a randomly generated key. </p>
+<h3 id="bitwise-and">Bitwise AND</h3>
+<p>Now, the property of a bitwise AND operation is that bits that are OFF (equal to 0) will always stay OFF, no matter what the bit is ANDed with.
+So, we can just apply the bitwise AND operation on many different ciphertexts together. </p>
+<p>How this works is that bits that are ON in the flag are ON forever regardless of the key, so even after applying bitwise AND on so many different ciphertexts they will still be ON.</p>
+<p>On the other hand, if we have many different ciphertexts, there must be at least one occurence where a bit that is originally OFF stays OFF, as the corresponding part of the key encrypting it may be OFF as well. By applying bitwise AND on all the ciphertexts together, this bit will be turned OFF.</p>
+<p>So, the final result would be a set of bytes, which has the same bits as the flag that are ON, and the same bits that are OFF, which is the flag!</p>
+<h2 id="exploit">Exploit</h2>
+<h3 id="get-many-ciphertexts">Get many ciphertexts</h3>
+<p>First thing we need is to automate the process of getting ciphertexts since we need A LOT of them.</p>
+<p>We can easily do it using pwntools.</p>
+<pre><code>from pwn import *
+import base64
+
+HOST = 'ctf.pwn.sg'
+PORT = 1401
+
+r = remote(HOST, PORT)
+m = base64.b64decode(r.readall().strip().encode('utf-8'))
+assert len(m) == 14160
+</code></pre>
+
+<p>Along the way, we also convert the message to the correct encoding, and add a safety check to make sure the number of bytes received is always the same.</p>
+<h3 id="and-them-all">AND them all!</h3>
+<p>We can write a simple python function to do the bitwise AND between two strings for us. We initialize message to be a bunch of <code>\xff</code> bytes, which means all bits in it are ON at the start.</p>
+<pre><code>message = '\xff' * 14160
+
+def and_strings(s1, s2):
+    return ''.join([chr(ord(s1[i]) &amp; ord(s2[i])) for i in range(len(s1))])
+</code></pre>
+
+<h3 id="combining-all-together">Combining all together</h3>
+<p>Our final solution is</p>
+<pre><code>from pwn import *
+import base64
+
+HOST = 'ctf.pwn.sg'
+PORT = 1401
+
+message = '\xff' * 14160
+
+def and_strings(s1, s2):
+    return ''.join([chr(ord(s1[i]) &amp; ord(s2[i])) for i in range(len(s1))])
+
+for i in range(500):
+    print i
+    r = remote(HOST, PORT)
+    m = base64.b64decode(r.readall().strip().encode('utf-8'))
+    assert len(m) == 14160
+    message = and_strings(message, m)
+
+open('flag', 'w').write(message)
+</code></pre>
+
+<p>At first, I tried to read the flag on the terminal, but I get a bunch of unreadable bytes. I was confused and doubted my solution. But then, I remembered it was 14kb of data, sounds more likely to be a file.</p>
+<p>So, <code>open('flag', 'w').write(message)</code> was added to save the decrypted flag in a file.</p>
+<h2 id="reading-the-flag">Reading the flag</h2>
+<p>While doing <code>file flag</code>, I get</p>
+<pre><code>flag: MPEG ADTS, layer III, v2,  16 kbps, 24 kHz, Monaural
+</code></pre>
+
+<p>A MPEG file! Play it using <code>mpg123 flag</code> and we get the flag!</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../BabyRSA2/" title="BabyRSA 2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                BabyRSA 2
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../crossctf-finals2018/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Overview
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
